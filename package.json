@@ -1,0 +1,8 @@
+{
+  "name": "proinversion",
+  "version": "1.0.0",
+  "description": "Website to Pro Inversión",
+  "main": "gulpfile.js",
+  "author": "Elvis Saavedra",
+  "license": "N/A"
+}
