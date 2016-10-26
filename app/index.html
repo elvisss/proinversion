@@ -15,14 +15,165 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.js"></script>
     <![endif]-->
-    <!-- Latest compiled and minified CSS -->
 	</head>
 	<body>
 
-    <div id="owl-example" class="owl-carousel">
-      <img src="img/slider1.jpg">
-      <img src="img/slider1.jpg">
+    <div id="container">
+      <div class="content-page">
+        <div id="logo">
+          <a href="index.html">
+            <img src="img/logo.png" />
+          </a>
+        </div>
+        <div id="slider-home" class="owl-carousel">
+          <div class="slide">
+            <div class="slide-message">
+              <p>Maecenas velit quam, agittis et efficitur sit ame</p>
+            </div>
+            <img src="img/slider1.jpg">
+          </div>
+          <div class="slide">
+            <div class="slide-message">
+              <p>officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <img src="img/slider1.jpg">
+          </div>
+        </div>
+        <div id="marca-peru">
+          <img src="img/marca-peru.png" />
+        </div>
+      </div>
     </div>
+
+    <section id="home">
+      <div class="container-fluid">
+        <div class="container">
+            <div class="box-buttons">
+              <div class="row">
+                <div class="col-lg-1-5 col-sm-4">
+                  <div class="box box-nosotros">
+                    <a href="nosotros.html">
+                      <div class="box-content">
+                        <h2>NOSOTROS</h2>
+                        <img src="img/nosotros.png">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-1-5 col-sm-4">
+                  <div class="box box-economia">
+                    <a href="economia.html">
+                      <div class="box-content">
+                        <h2>ECONOMIA PERUANA</h2>
+                        <img src="img/economia.png">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-1-5 col-sm-4">
+                  <div class="box box-politica">
+                    <a href="politica.html">
+                      <div class="box-content">
+                        <h2>POLITICA DE INVERSIONES</h2>
+                        <img src="img/politica.png">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-1-5 col-sm-4">
+                  <div class="box box-lineamiento">
+                    <a href="lineamiento.html">
+                      <div class="box-content">
+                        <h2>LINEAMIENTO DEL PLAN DE GOBIERNO</h2>
+                        <img src="img/lineamiento.png">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-1-5 col-sm-4">
+                  <div class="box box-modelo">
+                    <a href="modelo.html">
+                      <div class="box-content">
+                        <h2>MODELO DE APP</h2>
+                        <img src="img/modelo.png">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="content-footer">
+          <div class="row">
+            <div class="col-xs-12 hidden-md hidden-sm hidden-xs col-lg-4">
+              <div class="box-footer">
+                <div class="logo-footer">
+                  <img src="img/logo-footer.png">
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-lg-offset-0 col-lg-4">
+              <div class="box-footer">
+                <div class="title-footer">Siguenos en:</div>
+                <div class="wrap-footer">
+                  <ul class="social-list">
+                    <li>
+                      <a class="google" href="#" title="Google plus"></a>
+                    </li>
+                    <li>
+                      <a class="linkedin" href="#" title="LinkedIn"></a>
+                    </li>
+                    <li>
+                      <a class="youtube" href="#" title="YouTube"></a>
+                    </li>
+                    <li>
+                      <a class="facebook" href="#" title="Facebook"></a>
+                    </li>
+                    <li>
+                      <a class="twitter" href="#" title="Twitter"></a>
+                    </li>
+                    <li>
+                      <a class="flicker" href="#" title="Flicker"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-lg-offset-0 col-lg-4">
+              <div class="box-footer">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="title-footer">Contacto</div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="wrap-footer">
+                      <div class="wrap-content-footer">
+                        1000 LLorem ipsum<br />
+                        Simovnumetov 135<br />
+                        Lima - Perú
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="wrap-footer">
+                      <div class="wrap-content-footer">
+                        Teléfono: (+51) 401 2133<br />
+                        <a href="mailto:info@proinversion.com">info@proinversion.com</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   	<script type="text/javascript" src="js/jquery.js"></script>
   	<script type="text/javascript" src="js/bootstrap.js"></script>
@@ -31,15 +182,12 @@
     <script type="text/javascript">
       $(document).ready(function() {
 
-        $("#owl-example").owlCarousel({
-          autoPlay: 3000, //Set AutoPlay to 3 seconds
+        $("#slider-home").owlCarousel({
           items : 1,
           pagination: false,
           navigation: true,
-          itemsDesktop: [1199,1],
-          itemsDesktopSmall: [979,1],
-          itemsTablet: [979,1],
-          itemsMobile: [479,1]
+          singleItem: true,
+          navigationText: ["",""]
         });
 
       });

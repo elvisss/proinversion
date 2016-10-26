@@ -14,6 +14,12 @@
   box-shadow: $shadow;
 }
 
+@mixin border-radius($radius...) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
 @mixin background-opacity($color, $opacity: 0.5) {
     background: $color;
     background: rgba($color, $opacity);
@@ -111,7 +117,7 @@
   overflow: hidden;
   position: relative;
   line-height: $lineHeight;
-  max-height: $lineHeight * $lineCount; 
+  max-height: $lineHeight * $lineCount;
   text-align: justify;
   margin-right: -1em;
   padding-right: 1em;
