@@ -7,8 +7,45 @@ body {
   font-family: $font-family;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+.container-home {
+  height: 100%;
+}
+
+.carousel,
+.item,
+.active {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+#slider-home {
+  height: 100%;
+  @media (min-width: 1010px) {
+    height: calc(100% - 200px);
+  }
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+  @include background-cover();
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
 #container {
   width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 @media (min-width: 790px) {
@@ -39,7 +76,7 @@ body {
 
 #logo {
   position: absolute;
-  top: 70px;
+  top: 40px;
   z-index: 9999;
   width: 100%;
   margin: 0 auto;
@@ -67,19 +104,20 @@ body {
     @include transform(translateY(-50%));
     position: absolute;
     top: 50%;
-    padding-left: 50px;
+    padding-right: 100px;
     width: 80%;
+    right: 0;
     p {
       color: #f8e9e9;
-      font-size: 30px;
+      font-size: 20px;
       margin: 0;
       text-shadow: 0px 0px 5px #ababab;
     }
     @media (min-width: 790px) {
       width: 50%;
-      padding-left: 160px;
+      padding-right: 15%;
       p {
-        font-size: 40px;
+        font-size: 35px;
       }
     }
   }
@@ -90,16 +128,26 @@ body {
   bottom: 0;
   right: 0;
   img {
-    margin-bottom: 45px;
+    margin-bottom: 35px;
     margin-right: 80px;
   }
+}
+
+#franja-roja {
+  @include background-cover();
+  background-position: right;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .box {
   height: 160px;
   margin: 2.5px -12.5px;
   &:hover {
-    @include box-shadow(inset 0 0 10px #000000)
+    @include transition(0.5s);
   }
   a {
     display: block;
@@ -109,18 +157,33 @@ body {
   }
   &.box-nosotros {
     background-color: $nosotros;
+    &:hover {
+      background-color: $nosotros-dark;
+    }
   }
   &.box-economia {
     background-color: $economia;
+    &:hover {
+      background-color: $economia-dark;
+    }
   }
   &.box-politica {
     background-color: $politica;
+    &:hover {
+      background-color: $politica-dark;
+    }
   }
   &.box-lineamiento {
     background-color: $lineamiento;
+    &:hover {
+      background-color: $lineamiento-dark;
+    }
   }
   &.box-modelo {
     background-color: $modelo;
+    &:hover {
+      background-color: $modelo-dark;
+    }
   }
   .box-content {
     @include transform(translateY(-50%));
@@ -133,9 +196,10 @@ body {
       color: #fff;
       font-size: 20px;
       font-weight: bold;
-      margin-bottom: 18px;
+      text-transform: uppercase;
     }
     img {
+      margin-bottom: 18px;
       max-width: 100%;
     }
   }
@@ -143,8 +207,16 @@ body {
 
 section {
   &#home {
+    height: auto;
     background-color: $bg-home;
-    padding: 20px 0;
+    padding: 17.5px 0;
+    @media (min-width: 1010px) {
+      height: 200px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+    }
   }
 }
 

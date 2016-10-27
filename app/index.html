@@ -18,93 +18,130 @@
 	</head>
 	<body>
 
-    <div id="container">
-      <div class="content-page">
-        <div id="logo">
-          <a href="index.html">
-            <img src="img/logo.png" />
+    <header class="container-home">
+      <div id="slider-home">
+
+        <div id="slider" class="carousel slide">
+
+          <div id="logo">
+            <a href="index.html">
+              <img src="img/logo.png" />
+            </a>
+          </div>
+
+            <!-- Wrapper for Slides -->
+          <div class="carousel-inner">
+              <div class="item active">
+                  <!-- Set the first background image using inline CSS below. -->
+                  <div class="fill" style="background-image:url('img/slider1.jpg');"></div>
+                  <div class="slide-message">
+                      <p>Maecenas velit quam, agittis et efficitur sit ame</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <!-- Set the second background image using inline CSS below. -->
+                  <div class="fill" style="background-image:url('img/slider2.jpg');"></div>
+                  <div class="slide-message">
+                      <p>Caption 2</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <!-- Set the third background image using inline CSS below. -->
+                  <div class="fill" style="background-image:url('img/slider3.jpg');"></div>
+                  <div class="slide-message">
+                      <p>Caption 3</p>
+                  </div>
+              </div>
+              <div class="item">
+                  <!-- Set the third background image using inline CSS below. -->
+                  <div class="fill" style="background-image:url('img/slider4.jpg');"></div>
+                  <div class="slide-message">
+                      <p>Caption 4</p>
+                  </div>
+              </div>
+          </div>
+
+          <div id="franja-roja" style="background-image:url('img/franja-roja_2.png');">
+            <!-- <img src="img/franja-roja.png"> -->
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#slider" data-slide="prev">
+            <span class="icon-prev"></span>
           </a>
-        </div>
-        <div id="slider-home" class="owl-carousel">
-          <div class="slide">
-            <div class="slide-message">
-              <p>Maecenas velit quam, agittis et efficitur sit ame</p>
-            </div>
-            <img src="img/slider1.jpg">
+          <a class="right carousel-control" href="#slider" data-slide="next">
+            <span class="icon-next"></span>
+          </a>
+
+          <div id="marca-peru">
+            <img src="img/marca-peru.png">
           </div>
-          <div class="slide">
-            <div class="slide-message">
-              <p>officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <img src="img/slider1.jpg">
-          </div>
+
         </div>
-        <div id="marca-peru">
-          <img src="img/marca-peru.png" />
-        </div>
+
       </div>
-    </div>
+    </header>
 
     <section id="home">
-      <div class="container-fluid">
-        <div class="container">
-            <div class="box-buttons">
-              <div class="row">
-                <div class="col-lg-1-5 col-sm-4">
-                  <div class="box box-nosotros">
-                    <a href="nosotros.html">
-                      <div class="box-content">
-                        <h2>NOSOTROS</h2>
-                        <img src="img/nosotros.png">
-                      </div>
-                    </a>
+      <div class="container">
+        <div class="box-buttons">
+          <div class="row">
+            <div class="col-md-1-5 col-sm-4">
+              <div class="box box-nosotros">
+                <a href="nosotros.html">
+                  <div class="box-content">
+                    <img src="img/nosotros.png">
+                    <h2>NOSOTROS</h2>
                   </div>
-                </div>
-                <div class="col-lg-1-5 col-sm-4">
-                  <div class="box box-economia">
-                    <a href="economia.html">
-                      <div class="box-content">
-                        <h2>ECONOMIA PERUANA</h2>
-                        <img src="img/economia.png">
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-1-5 col-sm-4">
-                  <div class="box box-politica">
-                    <a href="politica.html">
-                      <div class="box-content">
-                        <h2>POLITICA DE INVERSIONES</h2>
-                        <img src="img/politica.png">
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-1-5 col-sm-4">
-                  <div class="box box-lineamiento">
-                    <a href="lineamiento.html">
-                      <div class="box-content">
-                        <h2>LINEAMIENTO DEL PLAN DE GOBIERNO</h2>
-                        <img src="img/lineamiento.png">
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-1-5 col-sm-4">
-                  <div class="box box-modelo">
-                    <a href="modelo.html">
-                      <div class="box-content">
-                        <h2>MODELO DE APP</h2>
-                        <img src="img/modelo.png">
-                      </div>
-                    </a>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
+            <div class="col-md-1-5 col-sm-4">
+              <div class="box box-economia">
+                <a href="economia.html">
+                  <div class="box-content">
+                    <img src="img/economia.png">
+                    <h2>ECONOMIA PERUANA</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-1-5 col-sm-4">
+              <div class="box box-politica">
+                <a href="politica.html">
+                  <div class="box-content">
+                    <img src="img/politica.png">
+                    <h2>POLITICA DE INVERSIONES</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-1-5 col-sm-4">
+              <div class="box box-lineamiento">
+                <a href="lineamiento.html">
+                  <div class="box-content">
+                    <img src="img/lineamiento.png">
+                    <h2>PLAN DE GOBIERON DE PPK</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-1-5 col-sm-4">
+              <div class="box box-modelo">
+                <a href="modelo.html">
+                  <div class="box-content">
+                    <img src="img/modelo.png">
+                    <h2>MODELO DE APP</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- </div> -->
 
     <footer id="footer">
       <div class="container">
@@ -182,13 +219,17 @@
     <script type="text/javascript">
       $(document).ready(function() {
 
-        $("#slider-home").owlCarousel({
-          items : 1,
-          pagination: false,
-          navigation: true,
-          singleItem: true,
-          navigationText: ["",""]
-        });
+        $('.carousel').carousel({
+            interval: false
+        })
+
+        // $("#slider-home").owlCarousel({
+        //   items : 1,
+        //   pagination: false,
+        //   navigation: true,
+        //   singleItem: true,
+        //   navigationText: ["",""]
+        // });
 
       });
     </script>
