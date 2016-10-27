@@ -34,20 +34,35 @@ h1, h2, h3, h4, h5 {
   .col-lg-1-5 {
     width: 20%;
     float: left; } }
+.navbar {
+  border-radius: 0; }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent; }
+
 body {
   background-color: #edeef0;
   font-family: calibri, Arial, sans-serif; }
 
-html,
-body {
+html.home,
+body.home {
   height: 100%; }
+
+body.bg {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
+body.bg-economia {
+  background-image: url(../img/bg-economia.jpg);
+  background-position: center center;
+  background-repeat: no-repeat; }
 
 .container-home {
   height: 100%; }
 
 .carousel,
-.item,
-.active {
+.item.active {
   height: 100%; }
 
 .carousel-inner {
@@ -251,9 +266,10 @@ section#home {
       margin-left: 0; }
     #footer ul.social-list li a {
       display: block;
-      opacity: 0.3;
       width: 32px;
-      height: 26px; }
+      height: 26px;
+      background-repeat: no-repeat;
+      background-position: top center; }
       #footer ul.social-list li a.google {
         background-image: url("../img/google+.png"); }
       #footer ul.social-list li a.linkedin {
@@ -267,47 +283,221 @@ section#home {
       #footer ul.social-list li a.flicker {
         background-image: url("../img/flicker.png"); }
       #footer ul.social-list li a:hover {
-        opacity: 1; }
+        opacity: 0.8; }
 
-/* Styling Next and Prev buttons */
-.owl-theme .owl-controls .owl-buttons div {
-  position: absolute;
-  top: 50%;
-  height: 20px;
-  width: 20px;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  margin-top: -10px;
-  border-bottom: 3px solid #fff; }
-  .owl-theme .owl-controls .owl-buttons div.owl-prev {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    -webkit-box-shadow: -3px 3px 3px #404040;
-    -moz-box-shadow: -3px 3px 3px #404040;
-    box-shadow: -3px 3px 3px #404040;
-    left: 20px;
-    border-left: 3px solid #fff; }
-  .owl-theme .owl-controls .owl-buttons div.owl-next {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    -webkit-box-shadow: 3px 3px 3px #404040;
-    -moz-box-shadow: 3px 3px 3px #404040;
-    box-shadow: 3px 3px 3px #404040;
-    right: 20px;
-    border-right: 3px solid #fff; }
-  @media (min-width: 790px) {
-    .owl-theme .owl-controls .owl-buttons div.owl-prev {
-      left: 70px; }
-    .owl-theme .owl-controls .owl-buttons div.owl-next {
-      right: 70px; } }
+#header {
+  background-color: #ebeced;
+  -webkit-box-shadow: 0 -2px 14px #000;
+  -moz-box-shadow: 0 -2px 14px #000;
+  box-shadow: 0 -2px 14px #000; }
+
+.navbar-main {
+  min-height: 142px;
+  background-color: transparent; }
+  .navbar-main .navbar {
+    border: medium none;
+    padding: 40px 0;
+    margin-bottom: 0; }
+    .navbar-main .navbar .navbar-header a {
+      position: relative;
+      padding: 0;
+      margin: 0; }
+      .navbar-main .navbar .navbar-header a img {
+        position: absolute;
+        left: 0;
+        bottom: 0; }
+        @media (min-width: 768px) {
+          .navbar-main .navbar .navbar-header a img {
+            left: -20px;
+            width: 160px; } }
+        @media (min-width: 992px) {
+          .navbar-main .navbar .navbar-header a img {
+            width: 200px;
+            left: 0; } }
+        @media (min-width: 1210px) {
+          .navbar-main .navbar .navbar-header a img {
+            width: auto;
+            bottom: auto; } }
+    .navbar-main .navbar .navbar-nav {
+      margin-right: 0; }
+      .navbar-main .navbar .navbar-nav li {
+        padding: 0; }
+        @media (min-width: 992px) {
+          .navbar-main .navbar .navbar-nav li {
+            padding: 0 7.5px; } }
+        @media (min-width: 1210px) {
+          .navbar-main .navbar .navbar-nav li {
+            padding: 0 15px; } }
+        .navbar-main .navbar .navbar-nav li a {
+          color: #4f4f4f;
+          background-color: transparent;
+          border-bottom: 4px solid transparent;
+          font-family: Arial;
+          font-size: 13px;
+          height: 80px;
+          padding: 12px 0;
+          position: relative;
+          width: 100%; }
+          @media (min-width: 768px) {
+            .navbar-main .navbar .navbar-nav li a {
+              width: 88px;
+              font-size: 10px; } }
+          @media (min-width: 992px) {
+            .navbar-main .navbar .navbar-nav li a {
+              width: 95px;
+              font-size: 12px; } }
+          @media (min-width: 1210px) {
+            .navbar-main .navbar .navbar-nav li a {
+              width: 120px; } }
+          .navbar-main .navbar .navbar-nav li a span {
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            display: block;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            width: 100%; }
+          .navbar-main .navbar .navbar-nav li a.inicio.active, .navbar-main .navbar .navbar-nav li a.inicio:hover, .navbar-main .navbar .navbar-nav li a.inicio:focus {
+            border-color: #4f4f4f; }
+          .navbar-main .navbar .navbar-nav li a.nosotros.active, .navbar-main .navbar .navbar-nav li a.nosotros:hover, .navbar-main .navbar .navbar-nav li a.nosotros:focus {
+            color: #8bbc3a;
+            border-color: #8bbc3a; }
+          .navbar-main .navbar .navbar-nav li a.economia.active, .navbar-main .navbar .navbar-nav li a.economia:hover, .navbar-main .navbar .navbar-nav li a.economia:focus {
+            color: #fbbc34;
+            border-color: #fbbc34; }
+          .navbar-main .navbar .navbar-nav li a.politica.active, .navbar-main .navbar .navbar-nav li a.politica:hover, .navbar-main .navbar .navbar-nav li a.politica:focus {
+            color: #006ba7;
+            border-color: #006ba7; }
+          .navbar-main .navbar .navbar-nav li a.lineamiento.active, .navbar-main .navbar .navbar-nav li a.lineamiento:hover, .navbar-main .navbar .navbar-nav li a.lineamiento:focus {
+            color: #812864;
+            border-color: #812864; }
+          .navbar-main .navbar .navbar-nav li a.modelo.active, .navbar-main .navbar .navbar-nav li a.modelo:hover, .navbar-main .navbar .navbar-nav li a.modelo:focus {
+            color: #c61f1f;
+            border-color: #c61f1f; }
+    .navbar-main .navbar.navbar-default {
+      background-image: none;
+      background-color: transparent;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; }
+
+#page {
+  padding: 30px 0 60px; }
+
+.box-sidebar .top-sidebar {
+  padding: 25px 15px; }
+  .box-sidebar .top-sidebar h3 {
+    padding: 0 10px;
+    font-size: 25px; }
+    .box-sidebar .top-sidebar h3 span {
+      color: #ffffff; }
+.box-sidebar .body-sidebar {
+  padding: 18px 25px;
+  background-color: #fff; }
+  .box-sidebar .body-sidebar ul.list-categories li {
+    background-color: #fff;
+    display: block;
+    width: 100%; }
+    .box-sidebar .body-sidebar ul.list-categories li a {
+      color: #696969;
+      text-transform: uppercase;
+      font-size: 16px;
+      display: block;
+      padding: 12px 18px; }
+      .box-sidebar .body-sidebar ul.list-categories li a:hover, .box-sidebar .body-sidebar ul.list-categories li a:focus {
+        text-decoration: none; }
+    .box-sidebar .body-sidebar ul.list-categories li:hover, .box-sidebar .body-sidebar ul.list-categories li.active {
+      background-color: #efefef; }
+.box-sidebar .foot-sidebar {
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 20px; }
+  .box-sidebar .foot-sidebar h4 {
+    color: #696969;
+    font-size: 16px; }
+
+.introduction {
+  padding-right: 30px; }
+  .introduction .bg-introduccion {
+    background-image: url("../img/border-introduction.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: auto 100%;
+    padding: 35px 95px 25px 50px; }
+  .introduction figure.intro-img {
+    margin-bottom: 30px; }
+  .introduction h2 {
+    font-size: 37px;
+    color: #fff2df; }
+  .introduction h3 {
+    color: #fff2df;
+    font-size: 25px;
+    margin-bottom: 10px; }
+  .introduction p {
+    font-family: Arial;
+    font-size: 15px;
+    color: #fff; }
+
+.panel {
+  border: 0 solid; }
+  .panel .panel-body {
+    padding: 20px 40px; }
+    .panel .panel-body p, .panel .panel-body figcaption {
+      color: #505050; }
+    .panel .panel-body ul {
+      padding-left: 14px; }
+      .panel .panel-body ul li {
+        list-style: initial;
+        padding-left: 30px; }
+    .panel .panel-body figure {
+      margin-top: 30px; }
+      .panel .panel-body figure img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto; }
+      .panel .panel-body figure figcaption {
+        margin: 20px 0; }
+      .panel .panel-body figure .title-img {
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 10px; }
+
+.panel-default > .panel-heading {
+  padding: 0;
+  background-color: transparent;
+  background-image: none; }
+  .panel-default > .panel-heading a {
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 15px 40px;
+    text-decoration: none; }
+    .panel-default > .panel-heading a .fa {
+      float: right; }
+    .panel-default > .panel-heading a.collapsed .fa.fa-angle-up:before {
+      content: "\f107"; }
+
+.panel-group .panel + .panel {
+  margin-top: 12px; }
+
+.bg-economia .box-sidebar .top-sidebar {
+  background-color: #f5ad47; }
+  .bg-economia .box-sidebar .top-sidebar h3 {
+    color: #fecf8b; }
+.bg-economia .box-sidebar .body-sidebar ul.list-categories li:hover a, .bg-economia .box-sidebar .body-sidebar ul.list-categories li.active a {
+  color: #f5ad47; }
+.bg-economia .introduction {
+  background-color: #f4bb3c; }
+.bg-economia .panel-default > .panel-heading {
+  background-color: #f5ad47; }
+
+.bg #footer {
+  background-color: rgba(0, 0, 0, 0.6); }
 
 /*# sourceMappingURL=style.css.map */
