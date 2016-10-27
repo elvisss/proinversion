@@ -44,8 +44,8 @@ body {
   background-color: #edeef0;
   font-family: calibri, Arial, sans-serif; }
 
-html,
-body {
+html.home,
+body.home {
   height: 100%; }
 
 body.bg {
@@ -266,9 +266,10 @@ section#home {
       margin-left: 0; }
     #footer ul.social-list li a {
       display: block;
-      opacity: 0.3;
       width: 32px;
-      height: 26px; }
+      height: 26px;
+      background-repeat: no-repeat;
+      background-position: top center; }
       #footer ul.social-list li a.google {
         background-image: url("../img/google+.png"); }
       #footer ul.social-list li a.linkedin {
@@ -282,7 +283,7 @@ section#home {
       #footer ul.social-list li a.flicker {
         background-image: url("../img/flicker.png"); }
       #footer ul.social-list li a:hover {
-        opacity: 1; }
+        opacity: 0.8; }
 
 #header {
   background-color: #ebeced;
@@ -406,7 +407,7 @@ section#home {
       font-size: 16px;
       display: block;
       padding: 12px 18px; }
-      .box-sidebar .body-sidebar ul.list-categories li a:hover {
+      .box-sidebar .body-sidebar ul.list-categories li a:hover, .box-sidebar .body-sidebar ul.list-categories li a:focus {
         text-decoration: none; }
     .box-sidebar .body-sidebar ul.list-categories li:hover, .box-sidebar .body-sidebar ul.list-categories li.active {
       background-color: #efefef; }
@@ -444,13 +445,27 @@ section#home {
   border: 0 solid; }
   .panel .panel-body {
     padding: 20px 40px; }
-    .panel .panel-body p {
+    .panel .panel-body p, .panel .panel-body figcaption {
       color: #505050; }
     .panel .panel-body ul {
       padding-left: 14px; }
       .panel .panel-body ul li {
         list-style: initial;
         padding-left: 30px; }
+    .panel .panel-body figure {
+      margin-top: 30px; }
+      .panel .panel-body figure img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto; }
+      .panel .panel-body figure figcaption {
+        margin: 20px 0; }
+      .panel .panel-body figure .title-img {
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 10px; }
 
 .panel-default > .panel-heading {
   padding: 0;
@@ -481,5 +496,8 @@ section#home {
   background-color: #f4bb3c; }
 .bg-economia .panel-default > .panel-heading {
   background-color: #f5ad47; }
+
+.bg #footer {
+  background-color: rgba(0, 0, 0, 0.6); }
 
 /*# sourceMappingURL=style.css.map */
