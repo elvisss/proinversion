@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="bg-economia">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,6 +21,23 @@
     <div id="container">
 
       <header id="header">
+
+        <div id="language">
+          <div class="languages">
+            <ul>
+              <li>
+                <span>English</span>
+              </li>
+              <li>
+                <span>|</span>
+              </li>
+              <li>
+                <a href="#">Español</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <div class="container">
           <div class="navbar-main">
             <nav class="navbar navbar-default">
@@ -43,9 +60,9 @@
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html" class="inicio"><span>INICIO</span></a></li>
                     <li><a href="#" class="nosotros"><span>NOSOTROS</span></a></li>
-                    <li><a href="#" class="economia active"><span>ECONOMÍA<br /> PERUANA</span></a></li>
+                    <li><a href="economia" class="economia active"><span>ACTIVIDAD<br /> ECONÓMICA</span></a></li>
                     <li><a href="#" class="politica"><span>POLÍTICA DE<br/> INVERSIONES</span></a></li>
-                    <li><a href="#" class="lineamiento"><span>PLAN DE GOBIERNO<br /> DE PPK</span></a></li>
+                    <li><a href="lineamiento.html" class="lineamiento"><span>PLAN DE GOBIERNO<br /> DE PPK</span></a></li>
                     <li><a href="#" class="modelo"><span>MODELO DE APP</span></a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
@@ -66,12 +83,36 @@
                   </div>
                   <div class="body-sidebar">
                     <ul class="list-categories" role="tablist">
-                      <li role="presentation" class="active"><a href="#introduccion" aria-controls="introduccion" role="tab" data-toggle="tab">Introduccion</a></li>
-                      <li role="presentation"><a href="#seccion1" aria-controls="seccion1" role="tab" data-toggle="tab">Estructura Productiva</a></li>
-                      <li role="presentation"><a href="#seccion2" aria-controls="seccion2" role="tab" data-toggle="tab">EVOLUCIÓN DE LAS INVERSIONES</a></li>
-                      <li role="presentation"><a href="#seccion3" aria-controls="seccion3" role="tab" data-toggle="tab">COMERCIO EXTERIOR</a></li>
-                      <li role="presentation"><a href="#seccion4" aria-controls="seccion4" role="tab" data-toggle="tab">POLÍTICA MONETARIA</a></li>
-                      <li role="presentation"><a href="#seccion5" aria-controls="seccion5" role="tab" data-toggle="tab">POLÍTICA FISCAL</a></li>
+                      <li role="presentation" class="active">
+                        <a href="#introduccion" aria-controls="introduccion" role="tab" data-toggle="tab">
+                          Introduccion <i class="fa fa-circle-o"></i>
+                        </a>
+                      </li>
+                      <li role="presentation">
+                        <a href="#seccion1" aria-controls="seccion1" role="tab" data-toggle="tab">
+                          Estructura Productiva <i class="fa fa-circle-o"></i>
+                        </a>
+                      </li>
+                      <li role="presentation">
+                        <a href="#seccion2" aria-controls="seccion2" role="tab" data-toggle="tab">
+                          EVOLUCIÓN DE LAS INVERSIONES <i class="fa fa-circle-o"></i>
+                        </a>
+                      </li>
+                      <li role="presentation">
+                        <a href="#seccion3" aria-controls="seccion3" role="tab" data-toggle="tab">
+                          COMERCIO EXTERIOR <i class="fa fa-circle-o"></i>
+                        </a>
+                      </li>
+                      <li role="presentation">
+                        <a href="#seccion4" aria-controls="seccion4" role="tab" data-toggle="tab">
+                          POLÍTICA MONETARIA <i class="fa fa-circle-o"></i>
+                        </a>
+                      </li>
+                      <li role="presentation">
+                        <a href="#seccion5" aria-controls="seccion5" role="tab" data-toggle="tab">
+                          POLÍTICA FISCAL <i class="fa fa-circle-o"></i>
+                        </a>
+                      </li>
                     </ul>
                   </div>
                   <div class="foot-sidebar">
@@ -143,25 +184,25 @@
                               <li>El mapa adjunto muestra la población, PBI y las principales actividades económicas por departamento. Adjuntar datos (Mapa N°1).</li>
                             </ul>
                             <figure>
-                              <img src="img/graficos/grafico1.jpg" alt="" />
+                              <img src="img/graficos/grafico1.png" alt="" />
                               <figcaption>(*) Proyecciones. Fuente: BCRP / Elaboración: ProInversión</figcaption>
                             </figure>
                             <figure>
-                              <img src="img/graficos/grafico2.jpg" alt="" />
+                              <img src="img/graficos/grafico2.png" alt="" />
                               <figcaption>Fuente: CEPAL / Elaboración: ProInversión</figcaption>
                             </figure>
                             <figure>
-                              <img src="img/graficos/grafico3.jpg" alt="" />
+                              <img src="img/graficos/grafico3.png" alt="" />
                               <figcaption>Fuente: FMI / Elaboración: ProInversión</figcaption>
                             </figure>
                             <p>Se estima que para el 2020, el PBI per cápita medido por la paridad del poder de compra (PPC) alcanzará un nivel de US$ 14,749, con lo que habrá aumentado 20.9% en un periodo de 5 años.</p>
                             <figure>
                               <div class="title-img">Tabla Nº 1</div>
-                              <img src="img/tablas/tabla1.jpg" alt="" />
+                              <img src="img/tablas/tabla1.png" alt="" />
                               <figcaption>Fuente: FMI</figcaption>
                             </figure>
                             <figure>
-                              <img src="img/graficos/grafico4.jpg" alt="" />
+                              <img src="img/graficos/grafico4.png" alt="" />
                               <figcaption>Fuente: INEI / Elaboración: ProInversión</figcaption>
                             </figure>
                           </div>
@@ -210,15 +251,15 @@
                               <li>Buena parte de la IED se vincula a la minería (22%), seguido de comunicaciones (19%), finanzas (18%), energía (15%), industria (13%) y otros (13%).</li>
                             </ul>
                             <figure>
-                              <img src="img/graficos/grafico5.jpg" alt="" />
+                              <img src="img/graficos/grafico5.png" alt="" />
                               <figcaption>Fuente: BCRP / Elaboración: ProInversión</figcaption>
                             </figure>
                             <figure>
-                              <img src="img/graficos/grafico6.jpg" alt="" />
+                              <img src="img/graficos/grafico6.png" alt="" />
                               <figcaption>Fuente: BCRP / Elaboración: ProInversión</figcaption>
                             </figure>
                             <figure>
-                              <img src="img/graficos/grafico7.jpg" alt="" />
+                              <img src="img/graficos/grafico7.png" alt="" />
                               <figcaption>(*)Saldo de la IED en el Perú como aporte al capital social, actualizado al 30 de junio de 2016.Fuente: ProInversión</figcaption>
                             </figure>
                           </div>
@@ -249,20 +290,20 @@
                             </ul>
                             <p>El Perú se proyecta como una plataforma de exportaciones.</p>
                             <figure>
-                              <img src="img/graficos/grafico8.jpg" alt="" />
+                              <img src="img/graficos/grafico8.png" alt="" />
                               <figcaption>(*) Proyecciones. Fuente:BCRP / Elaboración:Proinviersión</figcaption>
                             </figure>
                             <figure>
                               <div class="title-img">Mapa de Acuerdos Comerciales</div>
-                              <img src="img/mapas/mapa1.jpg" alt="" />
+                              <img src="img/mapas/mapa1.png" alt="" />
                               <figcaption>Fuente: Acuerdos Comerciales/ Elaboración: ProInversión</figcaption>
                             </figure>
                             <figure>
-                              <img src="img/mapas/mapa2.jpg" alt="" />
+                              <img src="img/mapas/mapa2.png" alt="" />
                               <figcaption>Fuente: Acuerdos Comerciales/ Elaboración: ProInversión</figcaption>
                             </figure>
                             <figure>
-                              <img src="img/mapas/mapa3.jpg" alt="" />
+                              <img src="img/mapas/mapa3.png" alt="" />
                               <figcaption>Fuente: Acuerdos Comerciales/ Elaboración: ProInversión</figcaption>
                             </figure>
                           </div>
@@ -312,7 +353,7 @@
                                 Tabla Nº 2<br />
                                 Exportaciones de productos tradicionales <br />(Valores FOB en millones de US$)
                               </div>
-                              <img src="img/tablas/tabla2.jpg" alt="" />
+                              <img src="img/tablas/tabla2.png" alt="" />
                               <figcaption>Fuente: BCRP y SUNAT<br />Elaboración: Proinversión.</figcaption>
                             </figure>
                             <figure>
@@ -320,22 +361,22 @@
                                 Tabla Nº 3<br />
                                 Exportaciones de Productos no tradicionales  <br />(Valor FOB en millones de US$)
                               </div>
-                              <img src="img/tablas/tabla3.jpg" alt="" />
+                              <img src="img/tablas/tabla3.png" alt="" />
                               <figcaption>1/ Incluye pieles, cueros y artesanías, principalmente.<br />Elaboración: Proinversión.</figcaption>
                             </figure>
                             <ul>
                               <li>Desde los años 90, el Perú mantiene una política de apertura comercial reflejada en la reducción unilateral de aranceles, pasando de un nivel de arancel efectivo de 12.3% en 1993 a 1.2% en el 2015.</li>
                             </ul>
                             <figure>
-                              <img src="img/graficos/grafico9.jpg" alt="" />
+                              <img src="img/graficos/grafico9.png" alt="" />
                               <figcaption>(*) A junio del 2016. Fuente: MEF</figcaption>
                             </figure>
                             <figure>
                               <div class="title-img">
                                 Tabla Nº 4<br />
-                                Estructura arancelaria 
+                                Estructura arancelaria
                               </div>
-                              <img src="img/tablas/tabla4.jpg" alt="" />
+                              <img src="img/tablas/tabla4.png" alt="" />
                               <figcaption>Fuente: SUNAT-MEF<br />Elaboración: PROINVERSIÓN</figcaption>
                             </figure>
                           </div>
@@ -365,11 +406,11 @@
                               <li>Este manejo ordenado ha hecho que el Perú sea el país con menor volatilidad cambiaria de América Latina.</li>
                             </ul>
                             <figure>
-                              <img src="img/graficos/grafico10.jpg" alt="" />
+                              <img src="img/graficos/grafico10.png" alt="" />
                               <figcaption>Fuente: BCRP/ Elaboración: ProInversión</figcaption>
                             </figure>
                             <figure>
-                              <img src="img/graficos/grafico11.jpg" alt="" />
+                              <img src="img/graficos/grafico11.png" alt="" />
                               <figcaption>(*) A setiembre.  Fuente: BCRP/ Elaboración: ProInversión</figcaption>
                             </figure>
                           </div>
@@ -388,12 +429,12 @@
                           <div class="panel-body">
                             <p>El alto nivel de reservas internacionales netas (RIN) asegura el cumplimiento de las obligaciones del Perú con el exterior. Se estima que para el 2016 las RIN alcanzarán los US$ 62,500 millones, monto que como porcentaje del PBI será el mayor de los países de la Alianza del Pacífico.</p>
                             <figure>
-                              <img src="img/graficos/grafico12.jpg" alt="" />
+                              <img src="img/graficos/grafico12.png" alt="" />
                               <figcaption>(*) Proyección.  Fuente: BCRP/ Elaboración: ProInversión.</figcaption>
                             </figure>
                             <figure>
                               <div class="title-img">Tabla Nº 5<br />Indicadores de cobertura internacional</div>
-                              <img src="img/tablas/tabla5.jpg" alt="" />
+                              <img src="img/tablas/tabla5.png" alt="" />
                               <figcaption>1/ Incluye el saldo de deuda de corto plazo más las amortizaciones a un año del sector privado y público.<br />* Proyección.<br />Fuente: BCRP</figcaption>
                             </figure>
                           </div>
@@ -440,7 +481,7 @@
                               <li>El espacio fiscal acumulado por la economía peruana en los años previos permite que se implemente una consolidación fiscal gradual en el tiempo.</li>
                             </ul>
                             <figure>
-                              <img src="img/graficos/grafico13.jpg" alt="" />
+                              <img src="img/graficos/grafico13.png" alt="" />
                               <figcaption>(*) Proyecciones. Fuente: BCRP</figcaption>
                             </figure>
                             <ul>
@@ -470,7 +511,7 @@
                               <li>Entre el 2006 y el 2015, la vida promedio de la deuda pública total se elevó de 8.4 a 12.1 años.</li>
                             </ul>
                             <figure>
-                              <img src="img/graficos/grafico14.jpg" alt="" />
+                              <img src="img/graficos/grafico14.png" alt="" />
                               <figcaption>Fuente: BCRP y FMI / Elaboración: ProInversión </figcaption>
                             </figure>
                           </div>
@@ -503,22 +544,34 @@
                   <div class="wrap-footer">
                     <ul class="social-list">
                       <li>
-                        <a class="google" href="#" title="Google plus"></a>
+                        <a class="google" href="#" title="Google plus">
+                          <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </a>
                       </li>
                       <li>
-                        <a class="linkedin" href="#" title="LinkedIn"></a>
+                        <a class="linkedin" href="#" title="LinkedIn">
+                          <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </a>
                       </li>
                       <li>
-                        <a class="youtube" href="#" title="YouTube"></a>
+                        <a class="youtube" href="#" title="YouTube">
+                          <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </a>
                       </li>
                       <li>
-                        <a class="facebook" href="#" title="Facebook"></a>
+                        <a class="facebook" href="#" title="Facebook">
+                          <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
                       </li>
                       <li>
-                        <a class="twitter" href="#" title="Twitter"></a>
+                        <a class="twitter" href="#" title="Twitter">
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
                       </li>
                       <li>
-                        <a class="flicker" href="#" title="Flicker"></a>
+                        <a class="flickr" href="#" title="Flickr">
+                          <i class="fa fa-flickr" aria-hidden="true"></i>
+                        </a>
                       </li>
                     </ul>
                   </div>

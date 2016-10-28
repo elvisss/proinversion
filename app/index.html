@@ -31,34 +31,50 @@
 
             <!-- Wrapper for Slides -->
           <div class="carousel-inner">
-              <div class="item active">
-                  <!-- Set the first background image using inline CSS below. -->
-                  <div class="fill" style="background-image:url('img/slider1.jpg');"></div>
-                  <div class="slide-message">
-                      <p>Maecenas velit quam, agittis et efficitur sit ame</p>
-                  </div>
+            <div class="item active">
+              <!-- Set the first background image using inline CSS below. -->
+              <div class="fill" style="background-image:url('img/slider1.jpg');"></div>
+              <div class="slide-message">
+                  <p>Maecenas velit quam, agittis et efficitur sit ame</p>
               </div>
-              <div class="item">
-                  <!-- Set the second background image using inline CSS below. -->
-                  <div class="fill" style="background-image:url('img/slider2.jpg');"></div>
-                  <div class="slide-message">
-                      <p>Caption 2</p>
-                  </div>
+            </div>
+            <div class="item">
+              <!-- Set the second background image using inline CSS below. -->
+              <div class="fill" style="background-image:url('img/slider2.jpg');"></div>
+              <div class="slide-message">
+                  <p>Caption 2</p>
               </div>
-              <div class="item">
-                  <!-- Set the third background image using inline CSS below. -->
-                  <div class="fill" style="background-image:url('img/slider3.jpg');"></div>
-                  <div class="slide-message">
-                      <p>Caption 3</p>
-                  </div>
+            </div>
+            <div class="item">
+              <!-- Set the third background image using inline CSS below. -->
+              <div class="fill" style="background-image:url('img/slider3.jpg');"></div>
+              <div class="slide-message">
+                  <p>Caption 3</p>
               </div>
-              <div class="item">
-                  <!-- Set the third background image using inline CSS below. -->
-                  <div class="fill" style="background-image:url('img/slider4.jpg');"></div>
-                  <div class="slide-message">
-                      <p>Caption 4</p>
-                  </div>
+            </div>
+            <div class="item">
+              <!-- Set the third background image using inline CSS below. -->
+              <div class="fill" style="background-image:url('img/slider4.jpg');"></div>
+              <div class="slide-message">
+                  <p>Caption 4</p>
               </div>
+            </div>
+          </div>
+
+          <div id="language">
+            <div class="languages">
+              <ul>
+                <li>
+                  <span>English</span>
+                </li>
+                <li>
+                  <span>|</span>
+                </li>
+                <li>
+                  <a href="#">Español</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div id="franja-roja" style="background-image:url('img/franja-roja.png');">
@@ -101,7 +117,7 @@
                 <a href="economia.html">
                   <div class="box-content">
                     <img src="img/economia.png">
-                    <h2>ECONOMIA PERUANA</h2>
+                    <h2>Actividad Económica</h2>
                   </div>
                 </a>
               </div>
@@ -160,22 +176,34 @@
                 <div class="wrap-footer">
                   <ul class="social-list">
                     <li>
-                      <a class="google" href="#" title="Google plus"></a>
+                      <a class="google" href="#" title="Google plus">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                      </a>
                     </li>
                     <li>
-                      <a class="linkedin" href="#" title="LinkedIn"></a>
+                      <a class="linkedin" href="#" title="LinkedIn">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                      </a>
                     </li>
                     <li>
-                      <a class="youtube" href="#" title="YouTube"></a>
+                      <a class="youtube" href="#" title="YouTube">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                      </a>
                     </li>
                     <li>
-                      <a class="facebook" href="#" title="Facebook"></a>
+                      <a class="facebook" href="#" title="Facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </a>
                     </li>
                     <li>
-                      <a class="twitter" href="#" title="Twitter"></a>
+                      <a class="twitter" href="#" title="Twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
                     </li>
                     <li>
-                      <a class="flicker" href="#" title="Flicker"></a>
+                      <a class="flickr" href="#" title="Flickr">
+                        <i class="fa fa-flickr" aria-hidden="true"></i>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -214,13 +242,13 @@
 
   	<script type="text/javascript" src="js/jquery.js"></script>
   	<script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.js"></script>
 
     <script type="text/javascript">
       $(document).ready(function() {
 
         $('.carousel').carousel({
             interval: false
+            // interval: 3000
         })
 
         // $("#slider-home").owlCarousel({
