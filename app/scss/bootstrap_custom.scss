@@ -42,3 +42,10 @@ h1, h2, h3, h4, h5 {
     float: left;
   }
 }
+
+.navbar {
+  border-radius: 0;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: transparent;
+}
