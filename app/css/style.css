@@ -152,15 +152,22 @@ body.bg {
 
 #marca-peru {
   position: absolute;
-  bottom: 0;
-  right: 0; }
+  bottom: 25px;
+  right: 60px;
+  text-align: right; }
   #marca-peru img {
-    margin-bottom: 25px;
-    margin-right: 60px; }
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    transform: scale(0.7); }
     @media (min-width: 790px) {
       #marca-peru img {
-        margin-bottom: 45px;
-        margin-right: 80px; } }
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1); } }
 
 #franja-roja {
   -webkit-background-size: cover;
@@ -192,7 +199,7 @@ body.bg {
     .box.box-nosotros:hover {
       background-color: #4e7906; }
   .box.box-economia {
-    background-color: #fbbc34; }
+    background-color: #f5ad47; }
     .box.box-economia:hover {
       background-color: #ee9509; }
   .box.box-politica {
@@ -213,7 +220,7 @@ body.bg {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
-    padding: 0 10px;
+    padding: 0 7.5px;
     position: absolute;
     text-align: center;
     top: 50%;
@@ -241,7 +248,7 @@ section#home {
 
 @media (min-width: 790px) {
   #footer .content-footer {
-    padding: 30px 0; } }
+    padding: 30px 0 0; } }
 #footer .logo-footer {
   padding-left: 50px; }
 #footer .box-footer {
@@ -267,9 +274,9 @@ section#home {
   width: 100%; }
   #footer ul.social-list li {
     float: left;
-    margin: 0 10px; }
-    #footer ul.social-list li:first-child {
-      margin-left: 0; }
+    margin-right: 20px; }
+    #footer ul.social-list li:last-child {
+      margin-right: 0; }
     #footer ul.social-list li a {
       display: block;
       height: 26px;
@@ -388,8 +395,8 @@ section#home {
             color: #8bbc3a;
             border-color: #8bbc3a; }
           .navbar-main .navbar .navbar-nav li a.economia.active, .navbar-main .navbar .navbar-nav li a.economia:hover, .navbar-main .navbar .navbar-nav li a.economia:focus {
-            color: #fbbc34;
-            border-color: #fbbc34; }
+            color: #f5ad47;
+            border-color: #f5ad47; }
           .navbar-main .navbar .navbar-nav li a.politica.active, .navbar-main .navbar .navbar-nav li a.politica:hover, .navbar-main .navbar .navbar-nav li a.politica:focus {
             color: #006ba7;
             border-color: #006ba7; }
@@ -432,14 +439,15 @@ section#home {
       font-size: 16px;
       line-height: 16px;
       display: block;
-      padding: 15px 18px; }
+      padding: 15px 33px 15px 18px; }
       .box-sidebar .body-sidebar ul.list-categories li a:hover, .box-sidebar .body-sidebar ul.list-categories li a:focus {
         text-decoration: none; }
       .box-sidebar .body-sidebar ul.list-categories li a .fa {
         float: right;
         font-size: 16px;
         line-height: 16px;
-        display: none; }
+        display: none;
+        margin-right: -15px; }
     .box-sidebar .body-sidebar ul.list-categories li:hover, .box-sidebar .body-sidebar ul.list-categories li.active {
       background-color: #efefef; }
     .box-sidebar .body-sidebar ul.list-categories li.active a .fa {
@@ -556,7 +564,7 @@ section#home {
 .bg-economia .box-sidebar .body-sidebar ul.list-categories li:hover a, .bg-economia .box-sidebar .body-sidebar ul.list-categories li.active a {
   color: #f5ad47; }
 .bg-economia .introduction {
-  background-color: #f4bb3c; }
+  background-color: #f5ad47; }
 .bg-economia .panel-default > .panel-heading {
   background-color: #f5ad47; }
 
