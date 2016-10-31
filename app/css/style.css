@@ -337,13 +337,19 @@ section#home {
           .navbar-main .navbar .navbar-header a img {
             width: auto;
             bottom: auto; } }
+    .navbar-main .navbar .navbar-header .navbar-brand img {
+      bottom: 0;
+      position: absolute; }
     .navbar-main .navbar .navbar-nav {
       margin-right: 0; }
       .navbar-main .navbar .navbar-nav li {
         padding: 0; }
+        @media (min-width: 768px) {
+          .navbar-main .navbar .navbar-nav li {
+            padding: 0 10px; } }
         @media (min-width: 992px) {
           .navbar-main .navbar .navbar-nav li {
-            padding: 0 7.5px; } }
+            padding: 0 15px; } }
         @media (min-width: 1210px) {
           .navbar-main .navbar .navbar-nav li {
             padding: 0 20px; } }
@@ -490,12 +496,29 @@ section#home {
     .box-sidebar .body-sidebar ul.list-categories li.active a .fa {
       display: block; }
 .box-sidebar .foot-sidebar {
-  margin-top: 10px;
-  background-color: #fff;
-  padding: 20px; }
-  .box-sidebar .foot-sidebar h4 {
+  margin-top: 10px; }
+  .box-sidebar .foot-sidebar a {
+    background-color: #fff;
+    display: block;
+    padding: 20px;
+    margin-top: 10px; }
+    .box-sidebar .foot-sidebar a:first-child {
+      margin-top: 0; }
+    .box-sidebar .foot-sidebar a:hover, .box-sidebar .foot-sidebar a:focus {
+      text-decoration: none;
+      outline: medium none; }
+    .box-sidebar .foot-sidebar a.doc {
+      display: none; }
+      .box-sidebar .foot-sidebar a.doc.show {
+        display: block; }
+      .box-sidebar .foot-sidebar a.doc .fa {
+        color: #f5ad47;
+        float: right; }
+  .box-sidebar .foot-sidebar span {
+    display: block;
     color: #696969;
-    font-size: 16px; }
+    font-size: 16px;
+    line-height: 1.1; }
 
 .introduction {
   padding-right: 30px;
@@ -534,7 +557,7 @@ section#home {
     padding: 20px 40px;
     font-size: 15px; }
     .panel .panel-body figure {
-      margin-top: 30px; }
+      margin-top: 80px; }
       .panel .panel-body figure img {
         display: block;
         max-width: 100%;

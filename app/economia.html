@@ -116,14 +116,19 @@
                     </ul>
                   </div>
                   <div class="foot-sidebar">
-                    <div class="row">
-                      <div class="col-xs-3">
-                        <img src="img/video-economia.png">
+                    <a href="#" data-toggle="modal" data-target="#myModal">
+                      <div class="row">
+                        <div class="col-xs-3">
+                          <img src="img/video-economia.png">
+                        </div>
+                        <div class="col-xs-9">
+                          <span>VER VIDEO DE<br/>ECONOMÍA PERUANA</span>
+                        </div>
                       </div>
-                      <div class="col-xs-9">
-                        <h4>VER VIDEO DE<br/>ECONOMÍA PERUANA</h4>
-                      </div>
-                    </div>
+                    </a>
+                    <a href="pdf/pdf1.pdf" target="_blank" class="doc">
+                      <span>DOCUMENTACIÓN 1 <i class="fa fa-paperclip"></i></span>
+                    </a>
                   </div>
                 </div>
               </aside>
@@ -610,9 +615,44 @@
 
     </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <video id="myVideo" width="100%" controls>
+            <source src="video/video1.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      </div>
+    </div>
+
   	<script type="text/javascript" src="js/jquery.js"></script>
   	<script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/page.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+
+        $('.list-categories a').on('click', function() {
+          console.log($(this).attr('href'))
+          if ($(this).attr('href') != '#seccion1') {
+            $('.foot-sidebar a.doc').removeClass('show');
+          } else {
+            $('.foot-sidebar a.doc').addClass('show');
+          }
+        });
+
+        // $('#myModal').on('show.bs.modal', function () {
+        //   $('#myVideo')[0].play();
+        // });
+
+        $('#myModal').on('hide.bs.modal', function () {
+          $('#myVideo')[0].pause()
+        });
+
+      });
+    </script>
 
 	</body>
 </html>

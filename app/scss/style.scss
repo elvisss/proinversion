@@ -376,6 +376,12 @@ section {
           }
         }
       }
+      .navbar-brand {
+        img {
+          bottom: 0;
+          position: absolute;
+        }
+      }
     }
     .navbar-nav {
       margin-right: 0;
@@ -383,10 +389,10 @@ section {
         // width: 150px;
         padding: 0;
         @media (min-width: 768px) {
-
+          padding: 0 10px;
         }
         @media (min-width: 992px) {
-          padding: 0 7.5px;
+          padding: 0 15px;
         }
         @media (min-width: 1210px) {
           padding: 0 20px;
@@ -617,11 +623,34 @@ section {
   }
   .foot-sidebar {
     margin-top: 10px;
-    background-color: #fff;
-    padding: 20px;
-    h4 {
+    a {
+      background-color: #fff;
+      display: block;
+      padding: 20px;
+      margin-top: 10px;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:hover, &:focus {
+        text-decoration: none;
+        outline: medium none;
+      }
+      &.doc {
+        display: none;
+        &.show {
+          display: block;
+        }
+        .fa {
+          color: $economia;
+          float: right;
+        }
+      }
+    }
+    span {
+      display: block;
       color: #696969;
       font-size: 16px;
+      line-height: 1.1;
     }
   }
 }
@@ -676,7 +705,7 @@ section {
     padding: 20px 40px;
     font-size: 15px;
     figure {
-      margin-top: 30px;
+      margin-top: 80px;
       img {
         display: block;
         max-width: 100%;
