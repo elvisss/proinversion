@@ -941,6 +941,13 @@ section {
   .panel-default > .panel-heading {
     background-color: $lineamiento;
   }
+  #wrap-page {
+    li {
+      &:before {
+        color: $lineamiento;
+      }
+    }
+  }
 }
 
 .bg-nosotros {
@@ -971,6 +978,13 @@ section {
   .content-seccion {
     h2 {
       color: $nosotros;
+    }
+  }
+  #wrap-page {
+    li {
+      &:before {
+        color: $nosotros;
+      }
     }
   }
 }

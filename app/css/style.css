@@ -701,6 +701,8 @@ section#home {
   background-color: #812864; }
 .bg-lineamiento .panel-default > .panel-heading {
   background-color: #812864; }
+.bg-lineamiento #wrap-page li:before {
+  color: #812864; }
 
 .bg-nosotros .box-sidebar .top-sidebar {
   background-color: #8bbc3a; }
@@ -711,6 +713,8 @@ section#home {
 .bg-nosotros .panel-default > .panel-heading {
   background-color: #8bbc3a; }
 .bg-nosotros .content-seccion h2 {
+  color: #8bbc3a; }
+.bg-nosotros #wrap-page li:before {
   color: #8bbc3a; }
 
 /*# sourceMappingURL=style.css.map */
