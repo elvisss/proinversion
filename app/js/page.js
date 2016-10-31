@@ -1,8 +1,6 @@
 $(function(){
-    // Check the initial Poistion of the Sticky Header
-    var stickyHeaderTop = $('#sidebar').offset().top;
 
-    console.log(stickyHeaderTop)
+    var stickyHeaderTop = $('#sidebar').offset().top;
 
     $(window).scroll(function(){
         if( $(window).scrollTop() > stickyHeaderTop ) {
@@ -13,10 +11,9 @@ $(function(){
     });
 
     $('.list-categories li a').on('click', function(){
-        if !($(this).parent().hasClass('active')) {
+        if (!($(this).parent().hasClass('active'))) {
             $(window).scrollTop(stickyHeaderTop)
         }
-        // console.log($(this).parent().hasClass('active'))
     })
 
 });
