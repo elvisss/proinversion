@@ -545,11 +545,13 @@ section#home {
   .introduction h2 {
     font-size: 37px;
     color: #fff;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    text-transform: uppercase; }
   .introduction h3 {
     color: #fff2df;
     font-size: 25px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    text-transform: uppercase; }
   .introduction ul {
     margin: 0 0 10px; }
     .introduction ul li {
