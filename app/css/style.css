@@ -516,8 +516,9 @@ section#home {
   padding: 25px 15px; }
   .box-sidebar .top-sidebar h3 {
     padding: 0 10px;
-    font-size: 25px;
-    color: #fff; }
+    font-size: 18px;
+    color: #fff;
+    font-family: "Bree"; }
     .box-sidebar .top-sidebar h3 span {
       color: #ffffff; }
 .box-sidebar .body-sidebar {
@@ -530,10 +531,11 @@ section#home {
     .box-sidebar .body-sidebar ul.list-categories li a {
       color: #696969;
       text-transform: uppercase;
-      font-size: 16px;
+      font-size: 18px;
       line-height: 16px;
       display: block;
-      padding: 15px 33px 15px 18px; }
+      padding: 15px 33px 15px 18px;
+      font-family: "Bree"; }
       .box-sidebar .body-sidebar ul.list-categories li a:hover, .box-sidebar .body-sidebar ul.list-categories li a:focus {
         text-decoration: none; }
       .box-sidebar .body-sidebar ul.list-categories li a .fa {
@@ -655,7 +657,7 @@ section#home {
     color: #fff;
     display: block;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 18px;
     padding: 17px 40px 13px;
     text-decoration: none;
     font-family: 'Bree'; }
