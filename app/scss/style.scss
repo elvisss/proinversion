@@ -309,7 +309,7 @@ section {
       padding: 0 25px;
       li {
         float: left;
-        padding: 10px 5px;
+        padding: 6px 5px;
         a {
           color: #fff;
           &:hover {
@@ -350,7 +350,7 @@ section {
   background-color: transparent;
   .navbar {
     border: medium none;
-    padding: 40px 0;
+    padding: 50px 0 30px;
     margin-bottom: 0;
     .navbar-header {
       a {
@@ -389,7 +389,7 @@ section {
           padding: 0 7.5px;
         }
         @media (min-width: 1210px) {
-          padding: 0 15px;
+          padding: 0 20px;
         }
         a {
           color: $inicio;
@@ -397,28 +397,30 @@ section {
           border-bottom: 4px solid transparent;
           font-family: Arial;
           font-size: 13px;
-          height: 80px;
-          padding: 12px 0;
+          padding: 20px 0;
           position: relative;
           width: 100%;
           @media (min-width: 768px) {
-            width: 88px;
+            // width: 88px;
             font-size: 10px;
           }
           @media (min-width: 992px) {
-            width: 95px;
+            // width: 95px;
             font-size: 12px;
           }
           @media (min-width: 1210px) {
-            width: 120px;
+            // width: 120px;
           }
           span {
-            @include transform(translateY(-50%));
+            // @include transform(translateY(-50%));
             display: block;
-            position: absolute;
+            // position: absolute;
             text-align: center;
-            top: 50%;
-            width: 100%;
+            // top: 50%;
+            // width: 100%;
+          }
+          &.double {
+            padding: 10px 0;
           }
           &.inicio {
             &.active, &:hover, &:focus {

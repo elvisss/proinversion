@@ -287,7 +287,7 @@ section#home {
     padding: 0 25px; }
     #language .languages ul li {
       float: left;
-      padding: 10px 5px; }
+      padding: 6px 5px; }
       #language .languages ul li a {
         color: #fff; }
         #language .languages ul li a:hover {
@@ -314,7 +314,7 @@ section#home {
   background-color: transparent; }
   .navbar-main .navbar {
     border: medium none;
-    padding: 40px 0;
+    padding: 50px 0 30px;
     margin-bottom: 0; }
     .navbar-main .navbar .navbar-header a {
       position: relative;
@@ -346,39 +346,27 @@ section#home {
             padding: 0 7.5px; } }
         @media (min-width: 1210px) {
           .navbar-main .navbar .navbar-nav li {
-            padding: 0 15px; } }
+            padding: 0 20px; } }
         .navbar-main .navbar .navbar-nav li a {
           color: #4f4f4f;
           background-color: transparent;
           border-bottom: 4px solid transparent;
           font-family: Arial;
           font-size: 13px;
-          height: 80px;
-          padding: 12px 0;
+          padding: 20px 0;
           position: relative;
           width: 100%; }
           @media (min-width: 768px) {
             .navbar-main .navbar .navbar-nav li a {
-              width: 88px;
               font-size: 10px; } }
           @media (min-width: 992px) {
             .navbar-main .navbar .navbar-nav li a {
-              width: 95px;
               font-size: 12px; } }
-          @media (min-width: 1210px) {
-            .navbar-main .navbar .navbar-nav li a {
-              width: 120px; } }
           .navbar-main .navbar .navbar-nav li a span {
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
-            transform: translateY(-50%);
             display: block;
-            position: absolute;
-            text-align: center;
-            top: 50%;
-            width: 100%; }
+            text-align: center; }
+          .navbar-main .navbar .navbar-nav li a.double {
+            padding: 10px 0; }
           .navbar-main .navbar .navbar-nav li a.inicio.active, .navbar-main .navbar .navbar-nav li a.inicio:hover, .navbar-main .navbar .navbar-nav li a.inicio:focus {
             border-color: #4f4f4f; }
           .navbar-main .navbar .navbar-nav li a.nosotros.active, .navbar-main .navbar .navbar-nav li a.nosotros:hover, .navbar-main .navbar .navbar-nav li a.nosotros:focus {
