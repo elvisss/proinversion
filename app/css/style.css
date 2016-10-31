@@ -40,6 +40,36 @@ h1, h2, h3, h4, h5 {
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-color: transparent; }
 
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  font-size: 60px; }
+
+@font-face {
+  font-family: 'Bree';
+  src: url("../fonts/BreePeru_Regular.otf");
+  src: url("../fonts/BreePeru_Regular.otf") format("opentype") url("../fonts/BreePeru_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/BreePeru_Regular.woff2") format("woff2"), url("../fonts/BreePeru_Regular.woff") format("woff"), url("../fonts/BreePeru_Regular.ttf") format("truetype"), url("../fonts/BreePeru_Regular.svg#glyphicons_halflingsregular") format("svg"); }
+@font-face {
+  font-family: 'BreeLight';
+  src: url("../fonts/BreePeru_Light.otf");
+  src: url("../fonts/BreePeru_Light.otf") format("opentype") url("../fonts/BreePeru_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/BreePeru_Light.woff2") format("woff2"), url("../fonts/BreePeru_Light.woff") format("woff"), url("../fonts/BreePeru_Light.ttf") format("truetype"), url("../fonts/BreePeru_Light.svg#glyphicons_halflingsregular") format("svg"); }
+@font-face {
+  font-family: 'BreeBold';
+  src: url("../fonts/BreePeru_Bold.otf");
+  src: url("../fonts/BreePeru_Bold.otf") format("opentype") url("../fonts/BreePeru_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BreePeru_Bold.woff2") format("woff2"), url("../fonts/BreePeru_Bold.woff") format("woff"), url("../fonts/BreePeru_Bold.ttf") format("truetype"), url("../fonts/BreePeru_Bold.svg#glyphicons_halflingsregular") format("svg"); }
+@font-face {
+  font-family: 'BreeLightBold';
+  src: url("../fonts/BreePeru_LightOblique.otf");
+  src: url("../fonts/BreePeru_LightOblique.otf") format("opentype") url("../fonts/BreePeru_LightOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/BreePeru_LightOblique.woff2") format("woff2"), url("../fonts/BreePeru_LightOblique.woff") format("woff"), url("../fonts/BreePeru_LightOblique.ttf") format("truetype"), url("../fonts/BreePeru_LightOblique.svg#glyphicons_halflingsregular") format("svg"); }
+@font-face {
+  font-family: 'BreeItalic';
+  src: url("../fonts/BreePeru_RegularOblique.otf");
+  src: url("../fonts/BreePeru_RegularOblique.otf") format("opentype") url("../fonts/BreePeru_RegularOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/BreePeru_RegularOblique.woff2") format("woff2"), url("../fonts/BreePeru_RegularOblique.woff") format("woff"), url("../fonts/BreePeru_RegularOblique.ttf") format("truetype"), url("../fonts/BreePeru_RegularOblique.svg#glyphicons_halflingsregular") format("svg"); }
+@font-face {
+  font-family: 'BreeBoldItalic';
+  src: url("../fonts/BreePeru_BoldOblique.otf");
+  src: url("../fonts/BreePeru_BoldOblique.otf") format("opentype") url("../fonts/BreePeru_BoldOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/BreePeru_BoldOblique.woff2") format("woff2"), url("../fonts/BreePeru_BoldOblique.woff") format("woff"), url("../fonts/BreePeru_BoldOblique.ttf") format("truetype"), url("../fonts/BreePeru_BoldOblique.svg#glyphicons_halflingsregular") format("svg"); }
 body {
   background-color: #edeef0;
   font-family: calibri, Arial, sans-serif; }
@@ -422,22 +452,33 @@ section#home {
   #sidebar {
     position: static !important; } }
 
-#wrap-page p, #wrap-page figcaption {
-  color: #505050; }
-#wrap-page ul, #wrap-page ol {
-  padding-left: 14px;
-  margin: 0 0 10px; }
-#wrap-page ul li {
-  list-style: initial; }
-#wrap-page ol li {
-  list-style-type: decimal; }
-#wrap-page li {
-  padding-left: 30px; }
-  #wrap-page li ul li, #wrap-page li ol li {
-    list-style-type: circle;
-    padding-left: 10px; }
+#wrap-page .content-seccion p, #wrap-page .content-seccion ul, #wrap-page .content-seccion ol, #wrap-page .panel-body p, #wrap-page .panel-body ul, #wrap-page .panel-body ol {
+  color: #9a9a9a; }
+#wrap-page .content-seccion p, #wrap-page .panel-body p {
+  font-weight: bold; }
+#wrap-page .content-seccion ul, #wrap-page .content-seccion ol, #wrap-page .panel-body ul, #wrap-page .panel-body ol {
+  margin: 20px 0;
+  font-size: 13px; }
+  #wrap-page .content-seccion ul li, #wrap-page .content-seccion ol li, #wrap-page .panel-body ul li, #wrap-page .panel-body ol li {
+    padding-left: 30px;
+    text-indent: -30px;
+    margin-bottom: 20px; }
+    #wrap-page .content-seccion ul li:before, #wrap-page .content-seccion ol li:before, #wrap-page .panel-body ul li:before, #wrap-page .panel-body ol li:before {
+      margin-right: 25px; }
+#wrap-page .content-seccion ol, #wrap-page .panel-body ol {
+  padding-left: 15px; }
+  #wrap-page .content-seccion ol li, #wrap-page .panel-body ol li {
+    list-style-type: decimal;
+    text-indent: 0; }
+#wrap-page .content-seccion ul > li:before, #wrap-page .panel-body ul > li:before {
+  content: "\2022"; }
+#wrap-page .content-seccion ul > li ul li, #wrap-page .content-seccion ul > li ol li, #wrap-page .panel-body ul > li ul li, #wrap-page .panel-body ul > li ol li {
+  list-style-type: circle;
+  padding-left: 10px; }
 #wrap-page .introduction p {
-  color: #fff; }
+  font-family: Arial, sans-serif;
+  color: #fff;
+  font-size: 15px; }
 #wrap-page .tab-introduccion {
   background-color: #fff;
   margin-top: 20px; }
@@ -527,7 +568,6 @@ section#home {
 
 .introduction {
   padding-right: 30px;
-  font-family: Arial, sans-serif;
   font-size: 15px;
   color: #fff; }
   .introduction .bg-introduccion {
@@ -543,19 +583,31 @@ section#home {
   .introduction figure.intro-img {
     margin-bottom: 30px; }
   .introduction h2 {
-    font-size: 37px;
+    font-size: 38px;
     color: #fff;
     margin-bottom: 10px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: 'BreeBold'; }
   .introduction h3 {
     color: #fff2df;
     font-size: 25px;
     margin-bottom: 10px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: 'Bree'; }
   .introduction ul {
     margin: 0 0 10px; }
     .introduction ul li {
       list-style: initial; }
+
+.back-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  display: none; }
+  @media (min-width: 790px) {
+    .back-to-top {
+      display: none !important; } }
 
 .panel {
   border: 0 solid; }
@@ -564,19 +616,21 @@ section#home {
     padding: 20px 40px;
     font-size: 15px; }
     .panel .panel-body figure {
-      margin-top: 80px; }
+      margin: 35px 0 60px; }
       .panel .panel-body figure img {
         display: block;
         max-width: 100%;
         margin: 0 auto; }
       .panel .panel-body figure figcaption {
-        margin: 20px 0; }
+        margin: 20px 0;
+        font-size: 13px;
+        color: #505050; }
     .panel .panel-body .title-img {
       text-align: center;
       font-weight: bold;
       font-size: 18px;
       color: #000;
-      margin-bottom: 10px; }
+      margin-bottom: 30px; }
       .panel .panel-body .title-img .sub-title {
         font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; }
     .panel .panel-body .footer-img {
@@ -600,8 +654,9 @@ section#home {
     display: block;
     text-transform: uppercase;
     font-size: 25px;
-    padding: 15px 40px;
-    text-decoration: none; }
+    padding: 17px 40px 13px;
+    text-decoration: none;
+    font-family: 'Bree'; }
     .panel-default > .panel-heading a .fa {
       float: right; }
     .panel-default > .panel-heading a.collapsed .fa.fa-angle-up:before {
@@ -631,6 +686,8 @@ section#home {
   background-color: #f5ad47; }
 .bg-economia .panel-default > .panel-heading {
   background-color: #f5ad47; }
+.bg-economia #wrap-page li:before {
+  color: #f5ad47; }
 
 .bg-lineamiento .box-sidebar .top-sidebar {
   background-color: #812864; }

@@ -2,6 +2,42 @@
 @import 'mixins';
 @import 'bootstrap_custom';
 
+@font-face {
+  font-family: 'Bree';
+  src: url('../fonts/BreePeru_Regular.otf');
+  src: url("../fonts/BreePeru_Regular.otf") format("opentype") url('../fonts/BreePeru_Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/BreePeru_Regular.woff2') format('woff2'), url('../fonts/BreePeru_Regular.woff') format('woff'), url('../fonts/BreePeru_Regular.ttf') format('truetype'), url('../fonts/BreePeru_Regular.svg#glyphicons_halflingsregular') format('svg');
+}
+
+@font-face {
+  font-family: 'BreeLight';
+  src: url('../fonts/BreePeru_Light.otf');
+  src: url("../fonts/BreePeru_Light.otf") format("opentype") url('../fonts/BreePeru_Light.eot?#iefix') format('embedded-opentype'), url('../fonts/BreePeru_Light.woff2') format('woff2'), url('../fonts/BreePeru_Light.woff') format('woff'), url('../fonts/BreePeru_Light.ttf') format('truetype'), url('../fonts/BreePeru_Light.svg#glyphicons_halflingsregular') format('svg');
+}
+
+@font-face {
+  font-family: 'BreeBold';
+  src: url('../fonts/BreePeru_Bold.otf');
+  src: url("../fonts/BreePeru_Bold.otf") format("opentype") url('../fonts/BreePeru_Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/BreePeru_Bold.woff2') format('woff2'), url('../fonts/BreePeru_Bold.woff') format('woff'), url('../fonts/BreePeru_Bold.ttf') format('truetype'), url('../fonts/BreePeru_Bold.svg#glyphicons_halflingsregular') format('svg');
+}
+
+@font-face {
+  font-family: 'BreeLightBold';
+  src: url('../fonts/BreePeru_LightOblique.otf');
+  src: url("../fonts/BreePeru_LightOblique.otf") format("opentype") url('../fonts/BreePeru_LightOblique.eot?#iefix') format('embedded-opentype'), url('../fonts/BreePeru_LightOblique.woff2') format('woff2'), url('../fonts/BreePeru_LightOblique.woff') format('woff'), url('../fonts/BreePeru_LightOblique.ttf') format('truetype'), url('../fonts/BreePeru_LightOblique.svg#glyphicons_halflingsregular') format('svg');
+}
+
+@font-face {
+  font-family: 'BreeItalic';
+  src: url('../fonts/BreePeru_RegularOblique.otf');
+  src: url("../fonts/BreePeru_RegularOblique.otf") format("opentype") url('../fonts/BreePeru_RegularOblique.eot?#iefix') format('embedded-opentype'), url('../fonts/BreePeru_RegularOblique.woff2') format('woff2'), url('../fonts/BreePeru_RegularOblique.woff') format('woff'), url('../fonts/BreePeru_RegularOblique.ttf') format('truetype'), url('../fonts/BreePeru_RegularOblique.svg#glyphicons_halflingsregular') format('svg');
+}
+
+@font-face {
+  font-family: 'BreeBoldItalic';
+  src: url('../fonts/BreePeru_BoldOblique.otf');
+  src: url("../fonts/BreePeru_BoldOblique.otf") format("opentype") url('../fonts/BreePeru_BoldOblique.eot?#iefix') format('embedded-opentype'), url('../fonts/BreePeru_BoldOblique.woff2') format('woff2'), url('../fonts/BreePeru_BoldOblique.woff') format('woff'), url('../fonts/BreePeru_BoldOblique.ttf') format('truetype'), url('../fonts/BreePeru_BoldOblique.svg#glyphicons_halflingsregular') format('svg');
+}
+
 body {
   background-color: $bg-color;
   font-family: $font-family;
@@ -513,35 +549,51 @@ section {
 }
 
 #wrap-page {
-  p, figcaption {
-    color: #505050;
-  }
-  ul, ol {
-    padding-left: 14px;
-    margin: 0 0 10px;
-  }
-  ul {
-    li {
-      list-style: initial;
+  .content-seccion, .panel-body {
+    p, ul, ol {
+      color: #9a9a9a;
     }
-  }
-  ol {
-    li {
-      list-style-type: decimal;
+    p {
+      font-weight: bold;
     }
-  }
-  li {
-    padding-left: 30px;
     ul, ol {
+      margin: 20px 0;
+      font-size: 13px;
       li {
-        list-style-type: circle;
-        padding-left: 10px;
+        padding-left: 30px;
+        text-indent: -30px;
+        margin-bottom: 20px;
+        &:before {
+          margin-right: 25px;
+        }
+      }
+    }
+    ol {
+      padding-left: 15px;
+      li {
+        list-style-type: decimal;
+        text-indent: 0;
+      }
+    }
+    ul {
+      > li {
+        &:before {
+          content: "\2022";
+        }
+        ul, ol {
+          li {
+            list-style-type: circle;
+            padding-left: 10px;
+          }
+        }
       }
     }
   }
   .introduction {
     p {
+      font-family: Arial, sans-serif;
       color: #fff;
+      font-size: 15px;
     }
   }
   .tab-introduccion {
@@ -667,7 +719,6 @@ section {
 
 .introduction {
   padding-right: 30px;
-  font-family: Arial, sans-serif;
   font-size: 15px;
   color: #fff;
   .bg-introduccion {
@@ -690,23 +741,36 @@ section {
     }
   }
   h2 {
-    font-size: 37px;
+    font-size: 38px;
     color: #fff;
     // color: #fff2df;
     margin-bottom: 10px;
     text-transform: uppercase;
+    font-family: 'BreeBold';
   }
   h3 {
     color: #fff2df;
     font-size: 25px;
     margin-bottom: 10px;
     text-transform: uppercase;
+    font-family: 'Bree';
   }
   ul {
     margin: 0 0 10px;
     li {
       list-style: initial;
     }
+  }
+}
+
+.back-to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  display: none;
+  @media (min-width: 790px) {
+    display: none !important;
   }
 }
 
@@ -717,7 +781,7 @@ section {
     padding: 20px 40px;
     font-size: 15px;
     figure {
-      margin-top: 80px;
+      margin: 35px 0 60px;
       img {
         display: block;
         max-width: 100%;
@@ -725,6 +789,8 @@ section {
       }
       figcaption {
         margin: 20px 0;
+        font-size: 13px;
+        color: #505050;
       }
     }
     .title-img {
@@ -732,7 +798,7 @@ section {
       font-weight: bold;
       font-size: 18px;
       color: #000;
-      margin-bottom: 10px;
+      margin-bottom: 30px;
       .sub-title {
         font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
       }
@@ -770,8 +836,9 @@ section {
     display: block;
     text-transform: uppercase;
     font-size: 25px;
-    padding: 15px 40px;
+    padding: 17px 40px 13px;
     text-decoration: none;
+    font-family: 'Bree';
     .fa {
       float: right;
     }
@@ -834,6 +901,13 @@ section {
   }
   .panel-default > .panel-heading {
     background-color: $economia;
+  }
+  #wrap-page {
+    li {
+      &:before {
+        color: $economia;
+      }
+    }
   }
 }
 

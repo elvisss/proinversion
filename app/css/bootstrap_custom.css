@@ -40,4 +40,10 @@ h1, h2, h3, h4, h5 {
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   border-color: transparent; }
 
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  font-size: 60px; }
+
 /*# sourceMappingURL=bootstrap_custom.css.map */
