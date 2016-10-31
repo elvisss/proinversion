@@ -52,6 +52,8 @@ body.bg-economia {
   background: url(../img/bg-economia.jpg) no-repeat center center fixed; }
 body.bg-lineamiento {
   background: url(../img/bg-lineamiento.jpg) no-repeat center center fixed; }
+body.bg-nosotros {
+  background: url(../img/bg-nosotros.jpg) no-repeat center center fixed; }
 body.bg {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -89,18 +91,6 @@ body.bg {
   height: 100%;
   position: relative; }
 
-@media (min-width: 790px) {
-  .container {
-    width: 750px; } }
-@media (min-width: 1010px) {
-  .container {
-    width: 970px; } }
-@media (min-width: 1210px) {
-  .container {
-    width: 1170px; } }
-@media (min-width: 1360px) {
-  .container {
-    width: 1320px; } }
 .content-page {
   position: relative; }
 
@@ -419,11 +409,70 @@ section#home {
 #sidebar, #wrap-page {
   margin: 10px 0; }
 
+@media (min-width: 768px) {
+  #sidebar {
+    width: 345px; } }
+@media (min-width: 992px) {
+  #sidebar {
+    width: 293px; } }
+@media (min-width: 1200px) {
+  #sidebar {
+    width: 262.5px; } }
+
+@media (max-width: 768px) {
+  #sidebar {
+    position: static !important; } }
+
+#wrap-page p, #wrap-page figcaption {
+  color: #505050; }
+#wrap-page ul, #wrap-page ol {
+  padding-left: 14px;
+  margin: 0 0 10px; }
+#wrap-page ul li {
+  list-style: initial; }
+#wrap-page ol li {
+  list-style-type: decimal; }
+#wrap-page li {
+  padding-left: 30px; }
+  #wrap-page li ul li, #wrap-page li ol li {
+    list-style-type: circle;
+    padding-left: 10px; }
+#wrap-page .introduction p {
+  color: #fff; }
+#wrap-page .tab-introduccion {
+  background-color: #fff;
+  margin-top: 20px; }
+  #wrap-page .tab-introduccion .nav-tabs {
+    background-color: #f2f2f2;
+    border: medium none;
+    margin: 0;
+    padding: 0; }
+    #wrap-page .tab-introduccion .nav-tabs > li {
+      background-color: #fff;
+      padding-left: 0; }
+    #wrap-page .tab-introduccion .nav-tabs > li.active > a, #wrap-page .tab-introduccion .nav-tabs > li.active > a:hover, #wrap-page .tab-introduccion .nav-tabs > li.active > a:focus {
+      background-color: #8bbc3a;
+      color: #fff; }
+    #wrap-page .tab-introduccion .nav-tabs > li > a {
+      color: #838383;
+      background-color: #e2e2e2;
+      font-size: 16px;
+      border: medium none;
+      margin-right: 1px;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0; }
+  #wrap-page .tab-introduccion p {
+    color: #58595b; }
+  #wrap-page .tab-introduccion .tab-content > .tab-pane {
+    padding: 42px 44px; }
+
 .box-sidebar .top-sidebar {
   padding: 25px 15px; }
   .box-sidebar .top-sidebar h3 {
     padding: 0 10px;
-    font-size: 25px; }
+    font-size: 25px;
+    color: #fff; }
     .box-sidebar .top-sidebar h3 span {
       color: #ffffff; }
 .box-sidebar .body-sidebar {
@@ -496,17 +545,6 @@ section#home {
     font-family: Arial, sans-serif;
     padding: 20px 40px;
     font-size: 15px; }
-    .panel .panel-body p, .panel .panel-body figcaption {
-      color: #505050; }
-    .panel .panel-body ul {
-      padding-left: 14px;
-      margin: 0 0 10px; }
-      .panel .panel-body ul li {
-        list-style: initial;
-        padding-left: 30px; }
-      .panel .panel-body ul ul li {
-        list-style-type: circle;
-        padding-left: 10px; }
     .panel .panel-body figure {
       margin-top: 30px; }
       .panel .panel-body figure img {
@@ -551,6 +589,14 @@ section#home {
     .panel-default > .panel-heading a.collapsed .fa.fa-angle-up:before {
       content: "\f107"; }
 
+.content-seccion {
+  background-color: #fff;
+  padding: 35px 50px; }
+  .content-seccion h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-transform: uppercase; }
+
 .panel-group .panel + .panel {
   margin-top: 12px; }
 
@@ -578,5 +624,16 @@ section#home {
   background-color: #812864; }
 .bg-lineamiento .panel-default > .panel-heading {
   background-color: #812864; }
+
+.bg-nosotros .box-sidebar .top-sidebar {
+  background-color: #8bbc3a; }
+.bg-nosotros .box-sidebar .body-sidebar ul.list-categories li:hover a, .bg-nosotros .box-sidebar .body-sidebar ul.list-categories li.active a {
+  color: #8bbc3a; }
+.bg-nosotros .introduction {
+  background-color: #8bbc3a; }
+.bg-nosotros .panel-default > .panel-heading {
+  background-color: #8bbc3a; }
+.bg-nosotros .content-seccion h2 {
+  color: #8bbc3a; }
 
 /*# sourceMappingURL=style.css.map */

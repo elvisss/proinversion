@@ -19,6 +19,9 @@ body {
   &.bg-lineamiento {
     background: url(../img/bg-lineamiento.jpg) no-repeat center center fixed;
   }
+  &.bg-nosotros {
+    background: url(../img/bg-nosotros.jpg) no-repeat center center fixed;
+  }
   &.bg {
     @include background-cover();
   }
@@ -59,27 +62,27 @@ body {
   position: relative;
 }
 
-@media (min-width: 790px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 1010px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1210px) {
-  .container {
-    width: 1170px;
-  }
-}
+// @media (min-width: 790px) {
+//   .container {
+//     width: 750px;
+//   }
+// }
+// @media (min-width: 1010px) {
+//   .container {
+//     width: 970px;
+//   }
+// }
+// @media (min-width: 1210px) {
+//   .container {
+//     width: 1170px;
+//   }
+// }
 
-@media (min-width: 1360px) {
-  .container {
-    width: 1320px;
-  }
-}
+// @media (min-width: 1360px) {
+//   .container {
+//     width: 1320px;
+//   }
+// }
 
 .content-page {
   position: relative;
@@ -471,12 +474,99 @@ section {
   margin: 10px 0;
 }
 
+#sidebar {
+  // width: 300px;
+  // position: static !important;
+  @media (min-width: 768px) {
+    width: 345px;
+  }
+  @media (min-width: 992px) {
+    width: 293px;
+  }
+  @media (min-width: 1200px) {
+    width: 262.5px;
+  }
+}
+
+#sidebar {
+  @media (max-width: 768px) {
+    position: static !important;
+  }
+}
+
+#wrap-page {
+  p, figcaption {
+    color: #505050;
+  }
+  ul, ol {
+    padding-left: 14px;
+    margin: 0 0 10px;
+  }
+  ul {
+    li {
+      list-style: initial;
+    }
+  }
+  ol {
+    li {
+      list-style-type: decimal;
+    }
+  }
+  li {
+    padding-left: 30px;
+    ul, ol {
+      li {
+        list-style-type: circle;
+        padding-left: 10px;
+      }
+    }
+  }
+  .introduction {
+    p {
+      color: #fff;
+    }
+  }
+  .tab-introduccion {
+    background-color: #fff;
+    margin-top: 20px;
+    .nav-tabs {
+      background-color: #f2f2f2;
+      border: medium none;
+      margin: 0;
+      padding: 0;
+      > li {
+        background-color: #fff;
+        padding-left: 0;
+      }
+      > li.active > a, > li.active > a:hover, > li.active > a:focus {
+        background-color: #8bbc3a;
+        color: #fff;
+      }
+      > li > a {
+        color: #838383;
+        background-color: #e2e2e2;
+        font-size: 16px;
+        border: medium none;
+        margin-right: 1px;
+        @include border-radius(0);
+      }
+    }
+    p {
+      color: #58595b;
+    }
+    .tab-content > .tab-pane {
+      padding: 42px 44px;
+    }
+  }
+}
+
 .box-sidebar {
   .top-sidebar {
     padding: 25px 15px;
     h3 {
       padding: 0 10px;
       font-size: 25px;
+      color: #fff;
       span {
         color: #ffffff;
       }
@@ -583,23 +673,6 @@ section {
     font-family: $font-family-page;
     padding: 20px 40px;
     font-size: 15px;
-    p, figcaption {
-      color: #505050;
-    }
-    ul {
-      padding-left: 14px;
-      margin: 0 0 10px;
-      li {
-        list-style: initial;
-        padding-left: 30px;
-      }
-      ul {
-        li {
-          list-style-type: circle;
-          padding-left: 10px;
-        }
-      }
-    }
     figure {
       margin-top: 30px;
       img {
@@ -671,6 +744,16 @@ section {
   }
 }
 
+.content-seccion {
+  background-color: #fff;
+  padding: 35px 50px;
+  h2 {
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+}
+
 .panel-group .panel + .panel {
   margin-top: 12px;
 }
@@ -738,6 +821,38 @@ section {
   }
   .panel-default > .panel-heading {
     background-color: $lineamiento;
+  }
+}
+
+.bg-nosotros {
+  .box-sidebar {
+    .top-sidebar {
+      background-color: $nosotros;
+    }
+    .body-sidebar {
+      ul {
+        &.list-categories {
+          li {
+            &:hover, &.active {
+              a {
+                color: $nosotros;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .introduction {
+    background-color: $nosotros;
+  }
+  .panel-default > .panel-heading {
+    background-color: $nosotros;
+  }
+  .content-seccion {
+    h2 {
+      color: $nosotros;
+    }
   }
 }
 
