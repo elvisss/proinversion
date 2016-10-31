@@ -472,9 +472,14 @@ section#home {
     text-indent: 0; }
 #wrap-page .content-seccion ul > li:before, #wrap-page .panel-body ul > li:before {
   content: "\2022"; }
-#wrap-page .content-seccion ul > li ul li, #wrap-page .content-seccion ul > li ol li, #wrap-page .panel-body ul > li ul li, #wrap-page .panel-body ul > li ol li {
-  list-style-type: circle;
-  padding-left: 10px; }
+#wrap-page .content-seccion ul > li ul, #wrap-page .content-seccion ul > li ol, #wrap-page .panel-body ul > li ul, #wrap-page .panel-body ul > li ol {
+  padding-left: 20px; }
+  #wrap-page .content-seccion ul > li ul li, #wrap-page .content-seccion ul > li ol li, #wrap-page .panel-body ul > li ul li, #wrap-page .panel-body ul > li ol li {
+    list-style-type: circle;
+    padding-left: 16px;
+    text-indent: -26px; }
+    #wrap-page .content-seccion ul > li ul li:before, #wrap-page .content-seccion ul > li ol li:before, #wrap-page .panel-body ul > li ul li:before, #wrap-page .panel-body ul > li ol li:before {
+      content: ""; }
 #wrap-page .introduction p {
   font-family: Arial, sans-serif;
   color: #fff;
@@ -605,9 +610,6 @@ section#home {
   bottom: 5px;
   right: 5px;
   display: none; }
-  @media (min-width: 790px) {
-    .back-to-top {
-      display: none !important; } }
 
 .panel {
   border: 0 solid; }
@@ -628,8 +630,8 @@ section#home {
     .panel .panel-body .title-img {
       text-align: center;
       font-weight: bold;
-      font-size: 15px;
-      color: #666;
+      font-size: 18px;
+      color: #000;
       margin-bottom: 30px; }
       .panel .panel-body .title-img .sub-title {
         font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; }
