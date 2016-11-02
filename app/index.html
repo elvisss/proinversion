@@ -33,13 +33,22 @@
             <div class="item active">
               <div class="fill" style="background-image:url('img/slider1.jpg');"></div>
               <div class="slide-message">
-                  <p>Maecenas velit quam, agittis et efficitur sit ame</p>
+                <h2>Ahora es cuando...</h2>
+                <h3>...invierte en <span>Perú</span></h3>
               </div>
             </div>
             <div class="item">
               <div class="fill" style="background-image:url('img/slider2.jpg');"></div>
+              <div class="slide-message inverted">
+                <h2>Infinitas oportunidades...</h2>
+                <h3>...invierte en <span class="red">Perú</span></h3>
+              </div>
+            </div>
+            <div class="item">
+              <div class="fill" style="background-image:url('img/slider3.jpg');"></div>
               <div class="slide-message">
-                  <p>Caption 2</p>
+                <h2 class="black">Una economía que crece...</h2>
+                <h3 class="black">...invierte en <span class="red">Perú</span></h3>
               </div>
             </div>
           </div>
@@ -86,20 +95,6 @@
         <div class="box-buttons">
           <div class="row">
             <div class="col-md-1-5 col-sm-4">
-              <div class="box box-nosotros">
-                <a href="nosotros.html">
-                  <div class="box-content">
-                    <img src="img/nosotros.png">
-                    <div class="box-title">
-                      <dib class="box-align">
-                        <h2>NOSOTROS</h2>
-                      </dib>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-1-5 col-sm-4">
               <div class="box box-economia">
                 <a href="economia.html">
                   <div class="box-content">
@@ -134,7 +129,7 @@
                     <img src="img/lineamiento.png">
                     <div class="box-title">
                       <dib class="box-align">
-                        <h2>PLAN DE GOBIERON DE PPK</h2>
+                        <h2>PLAN DE GOBIERNO DE PPK</h2>
                       </dib>
                     </div>
                   </div>
@@ -149,6 +144,20 @@
                     <div class="box-title">
                       <dib class="box-align">
                         <h2>MODELO DE APP</h2>
+                      </dib>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-1-5 col-sm-4">
+              <div class="box box-nosotros">
+                <a href="nosotros.html">
+                  <div class="box-content">
+                    <img src="img/nosotros.png">
+                    <div class="box-title">
+                      <dib class="box-align">
+                        <h2>NOSOTROS</h2>
                       </dib>
                     </div>
                   </div>
@@ -173,7 +182,7 @@
             </div>
             <div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-6 col-lg-offset-0 col-lg-4">
               <div class="box-footer">
-                <div class="title-footer">Siguenos en:</div>
+                <div class="title-footer">Siganos en:</div>
                 <div class="wrap-footer">
                   <ul class="social-list">
                     <li>
@@ -246,7 +255,7 @@
       $(document).ready(function() {
 
         $('.carousel').carousel({
-            interval: 3000
+            interval: false
         });
 
       });

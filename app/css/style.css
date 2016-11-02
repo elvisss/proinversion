@@ -148,27 +148,47 @@ body.bg {
           width: 100%; } }
 
 #slider-home .slide-message {
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
   position: absolute;
-  top: 40%;
-  padding-right: 100px;
-  width: 80%;
-  right: 0; }
-  #slider-home .slide-message p {
-    color: #f8e9e9;
-    font-size: 20px;
-    margin: 0;
+  top: 35%;
+  width: 65%;
+  left: 17.5%;
+  color: #fff;
+  font-family: "BreeBoldItalic";
+  color: #fff; }
+  #slider-home .slide-message h2 {
+    font-size: 30px;
     text-shadow: 0px 0px 5px #ababab; }
+    #slider-home .slide-message h2.black {
+      color: black; }
+  #slider-home .slide-message h3 {
+    font-size: 40px;
+    text-align: right;
+    text-shadow: 0px 0px 5px #ababab; }
+    #slider-home .slide-message h3.black {
+      color: black; }
+    #slider-home .slide-message h3 span {
+      font-size: 50px; }
+      #slider-home .slide-message h3 span.red {
+        color: red; }
+  #slider-home .slide-message.inverted {
+    top: 20%; }
+    #slider-home .slide-message.inverted h2 {
+      text-align: right; }
+    #slider-home .slide-message.inverted h3 {
+      text-align: left;
+      padding-top: 100px; }
   @media (min-width: 790px) {
     #slider-home .slide-message {
-      width: 50%;
-      padding-right: 15%; }
-      #slider-home .slide-message p {
-        font-size: 35px; } }
+      left: 15%;
+      width: 70%; }
+      #slider-home .slide-message h2 {
+        font-size: 40px; }
+      #slider-home .slide-message h3 {
+        font-size: 55px; }
+        #slider-home .slide-message h3 span {
+          font-size: 70px; }
+      #slider-home .slide-message.inverted {
+        top: 10%; } }
 
 #marca-peru {
   position: absolute;
@@ -215,9 +235,9 @@ body.bg {
     height: 100%;
     position: relative; }
   .box.box-nosotros {
-    background-color: #8bbc3a; }
+    background-color: #c61f1f; }
     .box.box-nosotros:hover {
-      background-color: #4e7906; }
+      background-color: #860101; }
   .box.box-economia {
     background-color: #f5ad47; }
     .box.box-economia:hover {
@@ -231,9 +251,9 @@ body.bg {
     .box.box-lineamiento:hover {
       background-color: #680448; }
   .box.box-modelo {
-    background-color: #c61f1f; }
+    background-color: #8bbc3a; }
     .box.box-modelo:hover {
-      background-color: #860101; }
+      background-color: #4e7906; }
   .box .box-content {
     padding: 32px 5px 0;
     text-align: center;
@@ -411,8 +431,8 @@ section#home {
           .navbar-main .navbar .navbar-nav li a.inicio.active, .navbar-main .navbar .navbar-nav li a.inicio:hover, .navbar-main .navbar .navbar-nav li a.inicio:focus {
             border-color: #4f4f4f; }
           .navbar-main .navbar .navbar-nav li a.nosotros.active, .navbar-main .navbar .navbar-nav li a.nosotros:hover, .navbar-main .navbar .navbar-nav li a.nosotros:focus {
-            color: #8bbc3a;
-            border-color: #8bbc3a; }
+            color: #c61f1f;
+            border-color: #c61f1f; }
           .navbar-main .navbar .navbar-nav li a.economia.active, .navbar-main .navbar .navbar-nav li a.economia:hover, .navbar-main .navbar .navbar-nav li a.economia:focus {
             color: #f5ad47;
             border-color: #f5ad47; }
@@ -423,8 +443,8 @@ section#home {
             color: #812864;
             border-color: #812864; }
           .navbar-main .navbar .navbar-nav li a.modelo.active, .navbar-main .navbar .navbar-nav li a.modelo:hover, .navbar-main .navbar .navbar-nav li a.modelo:focus {
-            color: #c61f1f;
-            border-color: #c61f1f; }
+            color: #8bbc3a;
+            border-color: #8bbc3a; }
     .navbar-main .navbar.navbar-default {
       background-image: none;
       background-color: transparent;
@@ -453,12 +473,12 @@ section#home {
     position: static !important; } }
 
 #wrap-page .content-seccion p, #wrap-page .content-seccion ul, #wrap-page .content-seccion ol, #wrap-page .panel-body p, #wrap-page .panel-body ul, #wrap-page .panel-body ol {
-  color: #9a9a9a; }
+  color: #9a9a9a;
+  font-size: 15px; }
 #wrap-page .content-seccion p, #wrap-page .panel-body p {
   font-weight: bold; }
 #wrap-page .content-seccion ul, #wrap-page .content-seccion ol, #wrap-page .panel-body ul, #wrap-page .panel-body ol {
-  margin: 20px 0;
-  font-size: 13px; }
+  margin: 20px 0; }
   #wrap-page .content-seccion ul li, #wrap-page .content-seccion ol li, #wrap-page .panel-body ul li, #wrap-page .panel-body ol li {
     padding-left: 30px;
     text-indent: -30px;
@@ -692,6 +712,8 @@ section#home {
   background-color: #f5ad47; }
 .bg-economia #wrap-page li:before {
   color: #f5ad47; }
+.bg-economia #wrap-page .tab-introduccion .nav-tabs > li.active > a, .bg-economia #wrap-page .tab-introduccion .nav-tabs > li.active > a:hover, .bg-economia #wrap-page .tab-introduccion .nav-tabs > li.active > a:focus {
+  background-color: #f5ad47; }
 
 .bg-lineamiento .box-sidebar .top-sidebar {
   background-color: #812864; }
@@ -705,18 +727,22 @@ section#home {
   background-color: #812864; }
 .bg-lineamiento #wrap-page li:before {
   color: #812864; }
+.bg-lineamiento #wrap-page .tab-introduccion .nav-tabs > li.active > a, .bg-lineamiento #wrap-page .tab-introduccion .nav-tabs > li.active > a:hover, .bg-lineamiento #wrap-page .tab-introduccion .nav-tabs > li.active > a:focus {
+  background-color: #812864; }
 
 .bg-nosotros .box-sidebar .top-sidebar {
-  background-color: #8bbc3a; }
+  background-color: #c61f1f; }
 .bg-nosotros .box-sidebar .body-sidebar ul.list-categories li:hover a, .bg-nosotros .box-sidebar .body-sidebar ul.list-categories li.active a {
-  color: #8bbc3a; }
+  color: #c61f1f; }
 .bg-nosotros .introduction {
-  background-color: #8bbc3a; }
+  background-color: #c61f1f; }
 .bg-nosotros .panel-default > .panel-heading {
-  background-color: #8bbc3a; }
+  background-color: #c61f1f; }
 .bg-nosotros .content-seccion h2 {
-  color: #8bbc3a; }
+  color: #c61f1f; }
 .bg-nosotros #wrap-page li:before {
-  color: #8bbc3a; }
+  color: #c61f1f; }
+.bg-nosotros #wrap-page .tab-introduccion .nav-tabs > li.active > a, .bg-nosotros #wrap-page .tab-introduccion .nav-tabs > li.active > a:hover, .bg-nosotros #wrap-page .tab-introduccion .nav-tabs > li.active > a:focus {
+  background-color: #c61f1f; }
 
 /*# sourceMappingURL=style.css.map */

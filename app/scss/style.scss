@@ -154,23 +154,60 @@ body {
 
 #slider-home {
   .slide-message {
-    @include transform(translateY(-50%));
+    // @include transform(translateY(-50%));
     position: absolute;
-    top: 40%;
-    padding-right: 100px;
-    width: 80%;
-    right: 0;
-    p {
-      color: #f8e9e9;
-      font-size: 20px;
-      margin: 0;
+    top: 35%;
+    // padding-right: 100px;
+    width: 65%;
+    left: 17.5%;
+    color: #fff;
+    font-family: "BreeBoldItalic";
+    color: #fff;
+    h2 {
+      font-size: 30px;
+      &.black {
+        color: black;
+      }
       text-shadow: 0px 0px 5px #ababab;
     }
+    h3 {
+      font-size: 40px;
+      text-align: right;
+      text-shadow: 0px 0px 5px #ababab;
+      &.black {
+        color: black;
+      }
+      span {
+        font-size: 50px;
+        &.red {
+          color: red;
+        }
+      }
+    }
+    &.inverted {
+      top: 20%;
+      h2 {
+        text-align: right;
+      }
+      h3 {
+        text-align: left;
+        padding-top: 100px;
+      }
+    }
     @media (min-width: 790px) {
-      width: 50%;
-      padding-right: 15%;
-      p {
-        font-size: 35px;
+      left: 15%;
+      width: 70%;
+      h2 {
+        font-size: 40px;
+      }
+      h3 {
+        font-size: 55px;
+        span {
+          font-size: 70px;
+        }
+      }
+      &.inverted {
+        top: 10%;
       }
     }
   }
@@ -552,13 +589,14 @@ section {
   .content-seccion, .panel-body {
     p, ul, ol {
       color: #9a9a9a;
+      font-size: 15px;
     }
     p {
       font-weight: bold;
     }
     ul, ol {
       margin: 20px 0;
-      font-size: 13px;
+      // font-size: 13px;
       li {
         padding-left: 30px;
         text-indent: -30px;
@@ -912,6 +950,13 @@ section {
         color: $economia;
       }
     }
+    .tab-introduccion {
+      .nav-tabs {
+        > li.active > a, > li.active > a:hover, > li.active > a:focus {
+          background-color: $economia;
+        }
+      }
+    }
   }
 }
 
@@ -947,6 +992,13 @@ section {
     li {
       &:before {
         color: $lineamiento;
+      }
+    }
+    .tab-introduccion {
+      .nav-tabs {
+        > li.active > a, > li.active > a:hover, > li.active > a:focus {
+          background-color: $lineamiento;
+        }
       }
     }
   }
@@ -986,6 +1038,13 @@ section {
     li {
       &:before {
         color: $nosotros;
+      }
+    }
+    .tab-introduccion {
+      .nav-tabs {
+        > li.active > a, > li.active > a:hover, > li.active > a:focus {
+          background-color: $nosotros;
+        }
       }
     }
   }
