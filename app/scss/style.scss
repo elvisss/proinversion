@@ -587,7 +587,7 @@ section {
 
 #wrap-page {
   .content-seccion, .panel-body {
-    p, ul, ol {
+    p, ul {
       color: #9a9a9a;
       font-size: 15px;
     }
@@ -611,6 +611,9 @@ section {
       li {
         list-style-type: decimal;
         text-indent: 0;
+        span {
+          color: #9a9a9a;
+        }
       }
     }
     ul {
@@ -630,6 +633,32 @@ section {
           }
         }
       }
+    }
+    figure {
+      margin: 35px 0 60px;
+      img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+      figcaption {
+        margin: 20px 0;
+        font-size: 13px;
+        color: #505050;
+      }
+    }
+    .title-img {
+      text-align: center;
+      font-weight: bold;
+      font-size: 15px;
+      color: #666;
+      margin-bottom: 30px;
+      .sub-title {
+        font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+      }
+    }
+    .footer-img {
+      margin: 20px 0;
     }
   }
   .introduction {
@@ -822,32 +851,6 @@ section {
     font-family: $font-family-page;
     padding: 20px 40px;
     font-size: 15px;
-    figure {
-      margin: 35px 0 60px;
-      img {
-        display: block;
-        max-width: 100%;
-        margin: 0 auto;
-      }
-      figcaption {
-        margin: 20px 0;
-        font-size: 13px;
-        color: #505050;
-      }
-    }
-    .title-img {
-      text-align: center;
-      font-weight: bold;
-      font-size: 15px;
-      color: #666;
-      margin-bottom: 30px;
-      .sub-title {
-        font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-      }
-    }
-    .footer-img {
-      margin: 20px 0;
-    }
   }
 }
 
@@ -901,8 +904,11 @@ section {
   padding: 35px 50px;
   h2 {
     font-size: 25px;
-    margin-bottom: 25px;
+    margin: 25px 0 15px;
     text-transform: uppercase;
+    &:first-child {
+      margin-top: 0;
+    }
   }
 }
 
@@ -1032,6 +1038,11 @@ section {
   .content-seccion {
     h2 {
       color: $nosotros;
+    }
+    ol {
+      li {
+        color: $nosotros;
+      }
     }
   }
   #wrap-page {

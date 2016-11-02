@@ -472,7 +472,7 @@ section#home {
   #sidebar {
     position: static !important; } }
 
-#wrap-page .content-seccion p, #wrap-page .content-seccion ul, #wrap-page .content-seccion ol, #wrap-page .panel-body p, #wrap-page .panel-body ul, #wrap-page .panel-body ol {
+#wrap-page .content-seccion p, #wrap-page .content-seccion ul, #wrap-page .panel-body p, #wrap-page .panel-body ul {
   color: #9a9a9a;
   font-size: 15px; }
 #wrap-page .content-seccion p, #wrap-page .panel-body p {
@@ -490,6 +490,8 @@ section#home {
   #wrap-page .content-seccion ol li, #wrap-page .panel-body ol li {
     list-style-type: decimal;
     text-indent: 0; }
+    #wrap-page .content-seccion ol li span, #wrap-page .panel-body ol li span {
+      color: #9a9a9a; }
 #wrap-page .content-seccion ul > li:before, #wrap-page .panel-body ul > li:before {
   content: "\2022"; }
 #wrap-page .content-seccion ul > li ul, #wrap-page .content-seccion ul > li ol, #wrap-page .panel-body ul > li ul, #wrap-page .panel-body ul > li ol {
@@ -500,6 +502,26 @@ section#home {
     text-indent: -26px; }
     #wrap-page .content-seccion ul > li ul li:before, #wrap-page .content-seccion ul > li ol li:before, #wrap-page .panel-body ul > li ul li:before, #wrap-page .panel-body ul > li ol li:before {
       content: ""; }
+#wrap-page .content-seccion figure, #wrap-page .panel-body figure {
+  margin: 35px 0 60px; }
+  #wrap-page .content-seccion figure img, #wrap-page .panel-body figure img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto; }
+  #wrap-page .content-seccion figure figcaption, #wrap-page .panel-body figure figcaption {
+    margin: 20px 0;
+    font-size: 13px;
+    color: #505050; }
+#wrap-page .content-seccion .title-img, #wrap-page .panel-body .title-img {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 30px; }
+  #wrap-page .content-seccion .title-img .sub-title, #wrap-page .panel-body .title-img .sub-title {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; }
+#wrap-page .content-seccion .footer-img, #wrap-page .panel-body .footer-img {
+  margin: 20px 0; }
 #wrap-page .introduction p {
   font-family: Arial, sans-serif;
   color: #fff;
@@ -639,26 +661,6 @@ section#home {
     font-family: Arial, sans-serif;
     padding: 20px 40px;
     font-size: 15px; }
-    .panel .panel-body figure {
-      margin: 35px 0 60px; }
-      .panel .panel-body figure img {
-        display: block;
-        max-width: 100%;
-        margin: 0 auto; }
-      .panel .panel-body figure figcaption {
-        margin: 20px 0;
-        font-size: 13px;
-        color: #505050; }
-    .panel .panel-body .title-img {
-      text-align: center;
-      font-weight: bold;
-      font-size: 15px;
-      color: #666;
-      margin-bottom: 30px; }
-      .panel .panel-body .title-img .sub-title {
-        font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; }
-    .panel .panel-body .footer-img {
-      margin: 20px 0; }
 
 .table.center-align > tbody > tr > td {
   text-align: center;
@@ -691,8 +693,10 @@ section#home {
   padding: 35px 50px; }
   .content-seccion h2 {
     font-size: 25px;
-    margin-bottom: 25px;
+    margin: 25px 0 15px;
     text-transform: uppercase; }
+    .content-seccion h2:first-child {
+      margin-top: 0; }
 
 .panel-group .panel + .panel {
   margin-top: 12px; }
@@ -739,6 +743,8 @@ section#home {
 .bg-nosotros .panel-default > .panel-heading {
   background-color: #c61f1f; }
 .bg-nosotros .content-seccion h2 {
+  color: #c61f1f; }
+.bg-nosotros .content-seccion ol li {
   color: #c61f1f; }
 .bg-nosotros #wrap-page li:before {
   color: #c61f1f; }
