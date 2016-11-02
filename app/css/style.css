@@ -472,6 +472,13 @@ section#home {
   #sidebar {
     position: static !important; } }
 
+ul.bullet > li {
+  padding-left: 30px;
+  text-indent: -30px; }
+  ul.bullet > li:before {
+    margin-right: 25px;
+    content: "\2022"; }
+
 #wrap-page .content-seccion p, #wrap-page .content-seccion ul, #wrap-page .panel-body p, #wrap-page .panel-body ul {
   color: #9a9a9a;
   font-size: 15px; }

@@ -585,6 +585,19 @@ section {
   }
 }
 
+ul {
+  &.bullet {
+    > li {
+      padding-left: 30px;
+      text-indent: -30px;
+      &:before {
+        margin-right: 25px;
+        content: "\2022";
+      }
+    }
+  }
+}
+
 #wrap-page {
   .content-seccion, .panel-body {
     p, ul {
