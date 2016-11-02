@@ -593,6 +593,9 @@ section {
     }
     p {
       font-weight: bold;
+      &.light {
+        font-weight: normal;
+      }
     }
     ul, ol {
       margin: 20px 0;

@@ -477,6 +477,8 @@ section#home {
   font-size: 15px; }
 #wrap-page .content-seccion p, #wrap-page .panel-body p {
   font-weight: bold; }
+  #wrap-page .content-seccion p.light, #wrap-page .panel-body p.light {
+    font-weight: normal; }
 #wrap-page .content-seccion ul, #wrap-page .content-seccion ol, #wrap-page .panel-body ul, #wrap-page .panel-body ol {
   margin: 20px 0; }
   #wrap-page .content-seccion ul li, #wrap-page .content-seccion ol li, #wrap-page .panel-body ul li, #wrap-page .panel-body ol li {
