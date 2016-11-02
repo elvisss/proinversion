@@ -521,7 +521,8 @@ section#home {
   color: #666;
   margin-bottom: 30px; }
   #wrap-page .content-seccion .title-img .sub-title, #wrap-page .panel-body .title-img .sub-title {
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; }
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    font-weight: normal; }
 #wrap-page .content-seccion .footer-img, #wrap-page .panel-body .footer-img {
   margin: 20px 0; }
 #wrap-page .introduction p {
