@@ -689,7 +689,13 @@ ul {
     background-color: #fff;
     margin-top: 20px;
     &.tab-lineamiento {
-      padding-right: 200px;
+      background-repeat: no-repeat;
+      background-position: right top;
+      @media (min-width: 1200px) {
+        background-size: 300px;
+        padding-right: 300px;
+        background-image: url('../img/pages/ppk1.jpg');
+      }
     }
     .nav-tabs {
       background-color: #f2f2f2;

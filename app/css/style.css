@@ -540,7 +540,13 @@ ul.bullet > li {
   background-color: #fff;
   margin-top: 20px; }
   #wrap-page .tab-introduccion.tab-lineamiento {
-    padding-right: 200px; }
+    background-repeat: no-repeat;
+    background-position: right top; }
+    @media (min-width: 1200px) {
+      #wrap-page .tab-introduccion.tab-lineamiento {
+        background-size: 300px;
+        padding-right: 300px;
+        background-image: url("../img/pages/ppk1.jpg"); } }
   #wrap-page .tab-introduccion .nav-tabs {
     background-color: #f2f2f2;
     border: medium none;
