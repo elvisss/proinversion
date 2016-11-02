@@ -84,6 +84,8 @@ body.bg-lineamiento {
   background: url(../img/bg-lineamiento.jpg) no-repeat center center fixed; }
 body.bg-nosotros {
   background: url(../img/bg-nosotros.jpg) no-repeat center center fixed; }
+body.bg-politica {
+  background: url(../img/bg-politica.jpg) no-repeat center center fixed; }
 body.bg {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -795,5 +797,22 @@ ul.bullet > li {
   color: #c61f1f; }
 .bg-nosotros #wrap-page .tab-introduccion .nav-tabs > li.active > a, .bg-nosotros #wrap-page .tab-introduccion .nav-tabs > li.active > a:hover, .bg-nosotros #wrap-page .tab-introduccion .nav-tabs > li.active > a:focus {
   background-color: #c61f1f; }
+
+.bg-politica .box-sidebar .top-sidebar {
+  background-color: #006ba7; }
+.bg-politica .box-sidebar .body-sidebar ul.list-categories li:hover a, .bg-politica .box-sidebar .body-sidebar ul.list-categories li.active a {
+  color: #006ba7; }
+.bg-politica .introduction {
+  background-color: #006ba7; }
+.bg-politica .panel-default > .panel-heading {
+  background-color: #006ba7; }
+.bg-politica .content-seccion h2 {
+  color: #006ba7; }
+.bg-politica .content-seccion ol li {
+  color: #006ba7; }
+.bg-politica #wrap-page li:before {
+  color: #006ba7; }
+.bg-politica #wrap-page .tab-introduccion .nav-tabs > li.active > a, .bg-politica #wrap-page .tab-introduccion .nav-tabs > li.active > a:hover, .bg-politica #wrap-page .tab-introduccion .nav-tabs > li.active > a:focus {
+  background-color: #006ba7; }
 
 /*# sourceMappingURL=style.css.map */
