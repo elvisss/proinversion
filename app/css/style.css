@@ -539,6 +539,8 @@ ul.bullet > li {
 #wrap-page .tab-introduccion {
   background-color: #fff;
   margin-top: 20px; }
+  #wrap-page .tab-introduccion.tab-lineamiento {
+    padding-right: 200px; }
   #wrap-page .tab-introduccion .nav-tabs {
     background-color: #f2f2f2;
     border: medium none;

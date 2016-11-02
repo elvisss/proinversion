@@ -688,6 +688,9 @@ ul {
   .tab-introduccion {
     background-color: #fff;
     margin-top: 20px;
+    &.tab-lineamiento {
+      padding-right: 200px;
+    }
     .nav-tabs {
       background-color: #f2f2f2;
       border: medium none;
