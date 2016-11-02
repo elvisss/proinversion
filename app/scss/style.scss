@@ -963,7 +963,7 @@ ul {
   }
 }
 
-.content-seccion {
+.content-seccion, .panel-body {
   background-color: #fff;
   padding: 35px 50px;
   h2 {
@@ -1102,7 +1102,7 @@ ul {
   .panel-default > .panel-heading {
     background-color: $nosotros;
   }
-  .content-seccion {
+  .content-seccion, .panel-body {
     h2 {
       color: $nosotros;
     }
@@ -1153,7 +1153,7 @@ ul {
   .panel-default > .panel-heading {
     background-color: $politica;
   }
-  .content-seccion {
+  .content-seccion, .panel-body {
     h2 {
       color: $politica;
     }

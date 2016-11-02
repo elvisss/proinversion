@@ -733,14 +733,14 @@ ul.bullet > li {
     .panel-default > .panel-heading a.collapsed .fa.fa-angle-up:before {
       content: "\f107"; }
 
-.content-seccion {
+.content-seccion, .panel-body {
   background-color: #fff;
   padding: 35px 50px; }
-  .content-seccion h2 {
+  .content-seccion h2, .panel-body h2 {
     font-size: 25px;
     margin: 25px 0 15px;
     text-transform: uppercase; }
-    .content-seccion h2:first-child {
+    .content-seccion h2:first-child, .panel-body h2:first-child {
       margin-top: 0; }
 
 .panel-group .panel + .panel {
@@ -789,9 +789,9 @@ ul.bullet > li {
   background-color: #c61f1f; }
 .bg-nosotros .panel-default > .panel-heading {
   background-color: #c61f1f; }
-.bg-nosotros .content-seccion h2 {
+.bg-nosotros .content-seccion h2, .bg-nosotros .panel-body h2 {
   color: #c61f1f; }
-.bg-nosotros .content-seccion ol li {
+.bg-nosotros .content-seccion ol li, .bg-nosotros .panel-body ol li {
   color: #c61f1f; }
 .bg-nosotros #wrap-page li:before {
   color: #c61f1f; }
@@ -806,9 +806,9 @@ ul.bullet > li {
   background-color: #006ba7; }
 .bg-politica .panel-default > .panel-heading {
   background-color: #006ba7; }
-.bg-politica .content-seccion h2 {
+.bg-politica .content-seccion h2, .bg-politica .panel-body h2 {
   color: #006ba7; }
-.bg-politica .content-seccion ol li {
+.bg-politica .content-seccion ol li, .bg-politica .panel-body ol li {
   color: #006ba7; }
 .bg-politica #wrap-page li:before {
   color: #006ba7; }
