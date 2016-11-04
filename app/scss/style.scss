@@ -104,28 +104,6 @@ body {
   position: relative;
 }
 
-// @media (min-width: 790px) {
-//   .container {
-//     width: 750px;
-//   }
-// }
-// @media (min-width: 1010px) {
-//   .container {
-//     width: 970px;
-//   }
-// }
-// @media (min-width: 1210px) {
-//   .container {
-//     width: 1170px;
-//   }
-// }
-
-// @media (min-width: 1360px) {
-//   .container {
-//     width: 1320px;
-//   }
-// }
-
 .content-page {
   position: relative;
 }
@@ -559,6 +537,15 @@ section {
       background-image: none;
       background-color: transparent;
       @include box-shadow(none);
+    }
+  }
+}
+
+a {
+  &.orange {
+    color: $economia;
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
@@ -1260,6 +1247,9 @@ ul {
               opacity: 0.8;
               color: #fff;
             }
+            &:focus {
+              opacity: 1;
+            }
           }
         }
       }
@@ -1327,6 +1317,11 @@ ul {
           border-right-color: transparent;
         }
       }
+    }
+  }
+  .modal-sm {
+    @media (min-width: 768px) {
+      width: 320px;
     }
   }
 }
