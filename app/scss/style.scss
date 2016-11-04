@@ -1172,6 +1172,7 @@ ul {
 .box-map {
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
   margin: 20px 0;
+  background-color: transparent;
   &.orange-map {
     .header-map {
       background-color: $economia;
@@ -1191,6 +1192,66 @@ ul {
           }
         }
       }
+    }
+    &.panel-default > .panel-heading {
+      background-color: $economia;
+    }
+  }
+  &.blue-map {
+    .header-map {
+      background-color: $politica;
+    }
+    .line-top-map {
+      &:before, &:after, .inner-line {
+        background-color: $politica;
+      }
+    }
+    .body-map {
+      ul {
+        li {
+          a {
+            &:hover, &:focus, &.active {
+              color: $politica;
+            }
+          }
+        }
+      }
+    }
+    &.panel-default > .panel-heading {
+      background-color: $politica;
+    }
+  }
+  &.green-map {
+    .header-map {
+      background-color: $modelo;
+    }
+    .line-top-map {
+      &:before, &:after, .inner-line {
+        background-color: $modelo;
+      }
+    }
+    .body-map {
+      ul {
+        li {
+          a {
+            &:hover, &:focus, &.active {
+              color: $modelo;
+            }
+          }
+        }
+      }
+    }
+    &.panel-default > .panel-heading {
+      background-color: $modelo;
+    }
+  }
+  &.panel-default > .panel-heading {
+    a {
+      padding: 7px 20px;
+      font-size: 15px;
+      color: #fff;
+      font-weight: normal;
+      font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     }
   }
   .line-top-map {
@@ -1220,7 +1281,6 @@ ul {
   }
   .header-map {
     padding: 7px 20px;
-    margin-bottom: 10px;
     h2 {
       font-size: 15px;
       color: #fff;
@@ -1228,6 +1288,8 @@ ul {
   }
   .body-map {
     background-color: rgba(255, 255, 255, 0.29);
+    margin: 10px 0 0;
+    padding-bottom: 20px;
     ul {
       li {
         a {
@@ -1272,10 +1334,51 @@ ul {
     background-position: center bottom;
     background-image: url('../img/bg-map.png');
     height: 740px;
-    margin: 0 auto;
     img {
       display: block;
       margin-left: 130px;
+    }
+  }
+  .bg-map-mundi {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-image: url('../img/bg-map-mundi.png');
+    height: 500px;
+    position: relative;
+    img {
+      display: block;
+      margin-left: -60px;
+    }
+    .tooltip {
+      font-size: 11px;
+      z-index: 1;
+      &.right {
+        .tooltip-arrow {
+          border-right-color: #e4f5fd;
+        }
+      }
+      &.top {
+        .tooltip-arrow {
+          border-top-color: #e4f5fd;
+        }
+      }
+      &.left {
+        .tooltip-arrow {
+          border-left-color: #e4f5fd;
+        }
+      }
+      &.bottom {
+        .tooltip-arrow {
+          border-bottom-color: #e4f5fd;
+        }
+      }
+    }
+    .tooltip-inner {
+      background-color: #e4f5fd;
+      color: #316eb6;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 2px 6px;
     }
   }
 }
@@ -1323,5 +1426,211 @@ ul {
     @media (min-width: 768px) {
       width: 320px;
     }
+  }
+}
+
+.modal-blue {
+  .modal-header {
+    background-color: #f1f1f1;
+    .modal-title {
+      color: $politica;
+      text-transform: uppercase;
+    }
+  }
+  .table {
+    tr {
+      text-align: center;
+      &:nth-child(1), &:nth-child(2), &:nth-child(4), &:nth-child(5) {
+        background-color: #3382d1;
+        color: #fff;
+      }
+      td {
+        vertical-align: middle;
+        &[colspan] {
+          background-color: #316eb6;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .modal-sm {
+    @media (min-width: 768px) {
+      width: 400px;
+    }
+  }
+}
+
+.pin-map {
+  height: 24px;
+  width: 13px;
+  background-repeat: no-repeat;
+  background-image: url('../img/pinmap.png');
+  position: absolute;
+  cursor: pointer;
+  display: none;
+  &.tailandia {
+    top: 108px;
+    left: 14px;
+  }
+  &.corea-del-sur {
+    top: 74px;
+    left: 107px;
+  }
+  &.japon {
+    top: 74px;
+    left: 141px;
+  }
+  &.singapur {
+    top: 151px;
+    left: 15px;
+  }
+  &.canada {
+    left: 317px;
+    top: 18px;
+  }
+  &.usa {
+    top: 46px;
+    left: 312px;
+  }
+  &.mexico {
+    top: 76px;
+    left: 283px;
+  }
+  &.el-salvador {
+    left: 298px;
+    top: 115px;
+  }
+  &.costa-rica {
+    top: 130px;
+    left: 320px;
+  }
+  &.cuba {
+    top: 114px;
+    left: 359px;
+  }
+  &.venezuela {
+    left: 400px;
+    top: 145px;
+  }
+  &.chile {
+    top: 222px;
+    left: 387px;
+  }
+  &.china {
+    top: 69px;
+    left: 779px;
+  }
+  &.islandia {
+    top: -12px;
+    left: 593px;
+  }
+  &.noruega {
+    top: 18px;
+    left: 592px;
+  }
+  &.liechtenstein {
+    top: 39px;
+    left: 633px;
+  }
+  &.suiza {
+    top: 53px;
+    left: 619px;
+  }
+  &.ecuador {
+    top: 160px;
+    left: 350px;
+  }
+  &.colombia {
+    top: 159px;
+    left: 380px;
+  }
+  &.bolivia {
+    top: 206px;
+    left: 401px;
+  }
+  &.paraguay {
+    top: 219px;
+    left: 435px;
+  }
+  &.brasil {
+    top: 184px;
+    left: 458px;
+  }
+  &.argentina {
+    top: 260px;
+    left: 414px;
+  }
+  &.uruguay {
+    top: 236px;
+    left: 458px;
+  }
+  &.guatemala {
+    left: 317px;
+    top: 132px;
+  }
+  &.honduras {
+    left: 335px;
+    top: 127px;
+  }
+  &.vietnam {
+    left: 10px;
+    top: 88px;
+  }
+  &.brunei {
+    left: -3px;
+    top: 115px;
+  }
+  &.malasia {
+    left: 15px;
+    top: 119px;
+  }
+  &.australia {
+    left: 82px;
+    top: 228px;
+  }
+  &.nueva-zelanda {
+    left: 139px;
+    top: 267px;
+  }
+  &.turquia {
+    left: 679px;
+    top: 71px;
+  }
+  &.corea {
+    left: 113px;
+    top: 59px;
+  }
+  &.hong-kong {
+    left: 88px;
+    top: 94px;
+  }
+  &.taipei {
+    left: 88px;
+    top: 123px;
+  }
+  &.panama {
+    left: 344px;
+    top: 149px;
+  }
+  &.mauricio {
+    left: 822px;
+    top: 219px;
+  }
+  &.pakistan {
+    left: 799px;
+    top: 94px;
+  }
+  &.israel {
+    left: 659px;
+    top: 88px;
+  }
+  &.union-europea {
+    left: 562px;
+    top: 14px;
+    width: 142px;
+    height: 108px;
+    background-repeat: no-repeat;
+    background-image: url('../img/bg-union-europea.png');
+    background-size: 83%;
   }
 }

@@ -836,13 +836,38 @@ ul.bullet > li {
 
 .box-map {
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-  margin: 20px 0; }
+  margin: 20px 0;
+  background-color: transparent; }
   .box-map.orange-map .header-map {
     background-color: #f5ad47; }
   .box-map.orange-map .line-top-map:before, .box-map.orange-map .line-top-map:after, .box-map.orange-map .line-top-map .inner-line {
     background-color: #f5ad47; }
   .box-map.orange-map .body-map ul li a:hover, .box-map.orange-map .body-map ul li a:focus, .box-map.orange-map .body-map ul li a.active {
     color: #f5ad47; }
+  .box-map.orange-map.panel-default > .panel-heading {
+    background-color: #f5ad47; }
+  .box-map.blue-map .header-map {
+    background-color: #006ba7; }
+  .box-map.blue-map .line-top-map:before, .box-map.blue-map .line-top-map:after, .box-map.blue-map .line-top-map .inner-line {
+    background-color: #006ba7; }
+  .box-map.blue-map .body-map ul li a:hover, .box-map.blue-map .body-map ul li a:focus, .box-map.blue-map .body-map ul li a.active {
+    color: #006ba7; }
+  .box-map.blue-map.panel-default > .panel-heading {
+    background-color: #006ba7; }
+  .box-map.green-map .header-map {
+    background-color: #8bbc3a; }
+  .box-map.green-map .line-top-map:before, .box-map.green-map .line-top-map:after, .box-map.green-map .line-top-map .inner-line {
+    background-color: #8bbc3a; }
+  .box-map.green-map .body-map ul li a:hover, .box-map.green-map .body-map ul li a:focus, .box-map.green-map .body-map ul li a.active {
+    color: #8bbc3a; }
+  .box-map.green-map.panel-default > .panel-heading {
+    background-color: #8bbc3a; }
+  .box-map.panel-default > .panel-heading a {
+    padding: 7px 20px;
+    font-size: 15px;
+    color: #fff;
+    font-weight: normal;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; }
   .box-map .line-top-map {
     height: 2px;
     background-color: #b6b7b4;
@@ -864,13 +889,14 @@ ul.bullet > li {
       height: 6px;
       width: 2px; }
   .box-map .header-map {
-    padding: 7px 20px;
-    margin-bottom: 10px; }
+    padding: 7px 20px; }
     .box-map .header-map h2 {
       font-size: 15px;
       color: #fff; }
   .box-map .body-map {
-    background-color: rgba(255, 255, 255, 0.29); }
+    background-color: rgba(255, 255, 255, 0.29);
+    margin: 10px 0 0;
+    padding-bottom: 20px; }
     .box-map .body-map ul li a {
       color: #646464;
       display: block;
@@ -901,11 +927,36 @@ ul.bullet > li {
     background-repeat: no-repeat;
     background-position: center bottom;
     background-image: url("../img/bg-map.png");
-    height: 740px;
-    margin: 0 auto; }
+    height: 740px; }
     .content-map .bg-map img {
       display: block;
       margin-left: 130px; }
+  .content-map .bg-map-mundi {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-image: url("../img/bg-map-mundi.png");
+    height: 500px;
+    position: relative; }
+    .content-map .bg-map-mundi img {
+      display: block;
+      margin-left: -60px; }
+    .content-map .bg-map-mundi .tooltip {
+      font-size: 11px;
+      z-index: 1; }
+      .content-map .bg-map-mundi .tooltip.right .tooltip-arrow {
+        border-right-color: #e4f5fd; }
+      .content-map .bg-map-mundi .tooltip.top .tooltip-arrow {
+        border-top-color: #e4f5fd; }
+      .content-map .bg-map-mundi .tooltip.left .tooltip-arrow {
+        border-left-color: #e4f5fd; }
+      .content-map .bg-map-mundi .tooltip.bottom .tooltip-arrow {
+        border-bottom-color: #e4f5fd; }
+    .content-map .bg-map-mundi .tooltip-inner {
+      background-color: #e4f5fd;
+      color: #316eb6;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 2px 6px; }
 
 #footer-map {
   background-color: #bed4e7;
@@ -941,5 +992,158 @@ ul.bullet > li {
 @media (min-width: 768px) {
   .modal-orange .modal-sm {
     width: 320px; } }
+
+.modal-blue .modal-header {
+  background-color: #f1f1f1; }
+  .modal-blue .modal-header .modal-title {
+    color: #006ba7;
+    text-transform: uppercase; }
+.modal-blue .table tr {
+  text-align: center; }
+  .modal-blue .table tr:nth-child(1), .modal-blue .table tr:nth-child(2), .modal-blue .table tr:nth-child(4), .modal-blue .table tr:nth-child(5) {
+    background-color: #3382d1;
+    color: #fff; }
+  .modal-blue .table tr td {
+    vertical-align: middle; }
+    .modal-blue .table tr td[colspan] {
+      background-color: #316eb6;
+      color: #fff; }
+@media (min-width: 768px) {
+  .modal-blue .modal-sm {
+    width: 400px; } }
+
+.pin-map {
+  height: 24px;
+  width: 13px;
+  background-repeat: no-repeat;
+  background-image: url("../img/pinmap.png");
+  position: absolute;
+  cursor: pointer;
+  display: none; }
+  .pin-map.tailandia {
+    top: 108px;
+    left: 14px; }
+  .pin-map.corea-del-sur {
+    top: 74px;
+    left: 107px; }
+  .pin-map.japon {
+    top: 74px;
+    left: 141px; }
+  .pin-map.singapur {
+    top: 151px;
+    left: 15px; }
+  .pin-map.canada {
+    left: 317px;
+    top: 18px; }
+  .pin-map.usa {
+    top: 46px;
+    left: 312px; }
+  .pin-map.mexico {
+    top: 76px;
+    left: 283px; }
+  .pin-map.el-salvador {
+    left: 298px;
+    top: 115px; }
+  .pin-map.costa-rica {
+    top: 130px;
+    left: 320px; }
+  .pin-map.cuba {
+    top: 114px;
+    left: 359px; }
+  .pin-map.venezuela {
+    left: 400px;
+    top: 145px; }
+  .pin-map.chile {
+    top: 222px;
+    left: 387px; }
+  .pin-map.china {
+    top: 69px;
+    left: 779px; }
+  .pin-map.islandia {
+    top: -12px;
+    left: 593px; }
+  .pin-map.noruega {
+    top: 18px;
+    left: 592px; }
+  .pin-map.liechtenstein {
+    top: 39px;
+    left: 633px; }
+  .pin-map.suiza {
+    top: 53px;
+    left: 619px; }
+  .pin-map.ecuador {
+    top: 160px;
+    left: 350px; }
+  .pin-map.colombia {
+    top: 159px;
+    left: 380px; }
+  .pin-map.bolivia {
+    top: 206px;
+    left: 401px; }
+  .pin-map.paraguay {
+    top: 219px;
+    left: 435px; }
+  .pin-map.brasil {
+    top: 184px;
+    left: 458px; }
+  .pin-map.argentina {
+    top: 260px;
+    left: 414px; }
+  .pin-map.uruguay {
+    top: 236px;
+    left: 458px; }
+  .pin-map.guatemala {
+    left: 317px;
+    top: 132px; }
+  .pin-map.honduras {
+    left: 335px;
+    top: 127px; }
+  .pin-map.vietnam {
+    left: 10px;
+    top: 88px; }
+  .pin-map.brunei {
+    left: -3px;
+    top: 115px; }
+  .pin-map.malasia {
+    left: 15px;
+    top: 119px; }
+  .pin-map.australia {
+    left: 82px;
+    top: 228px; }
+  .pin-map.nueva-zelanda {
+    left: 139px;
+    top: 267px; }
+  .pin-map.turquia {
+    left: 679px;
+    top: 71px; }
+  .pin-map.corea {
+    left: 113px;
+    top: 59px; }
+  .pin-map.hong-kong {
+    left: 88px;
+    top: 94px; }
+  .pin-map.taipei {
+    left: 88px;
+    top: 123px; }
+  .pin-map.panama {
+    left: 344px;
+    top: 149px; }
+  .pin-map.mauricio {
+    left: 822px;
+    top: 219px; }
+  .pin-map.pakistan {
+    left: 799px;
+    top: 94px; }
+  .pin-map.israel {
+    left: 659px;
+    top: 88px; }
+  .pin-map.union-europea {
+    left: 562px;
+    top: 14px;
+    width: 142px;
+    height: 108px;
+    background-repeat: no-repeat;
+    background-image: url("../img/bg-union-europea.png");
+    background-size: 83%; }
 
 /*# sourceMappingURL=style.css.map */
