@@ -64,6 +64,9 @@ body {
   &.bg {
     @include background-cover();
   }
+  &.bg-mapa {
+    @include bg-gradient(#fffcf0, #e8f3fc, #cdddea);
+  }
 }
 
 .container-home {
@@ -980,7 +983,7 @@ ul {
   margin-top: 12px;
 }
 
-.bg {
+.bg, .bg-mapa {
   #footer {
     background-color: rgba(0,0,0,0.6)
   }
@@ -1173,6 +1176,155 @@ ul {
       .nav-tabs {
         > li.active > a, > li.active > a:hover, > li.active > a:focus {
           background-color: $politica;
+        }
+      }
+    }
+  }
+}
+
+.box-map {
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  margin: 20px 0;
+  &.orange-map {
+    .header-map {
+      background-color: $economia;
+    }
+    .line-top-map {
+      &:before, &:after, .inner-line {
+        background-color: $economia;
+      }
+    }
+    .body-map {
+      ul {
+        li {
+          a {
+            &:hover, &:focus, &.active {
+              color: $economia;
+            }
+          }
+        }
+      }
+    }
+  }
+  .line-top-map {
+    height: 2px;
+    background-color: #b6b7b4;
+    margin-bottom: 12px;
+    position: relative;
+    .inner-line {
+      position: absolute;
+      left: 0;
+      height: 2px;
+      width: 30%;
+    }
+    &:before {
+      left: 0;
+    }
+    &:after {
+      right: 0;
+    }
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      height: 6px;
+      width: 2px;
+    }
+  }
+  .header-map {
+    padding: 7px 20px;
+    margin-bottom: 10px;
+    h2 {
+      font-size: 15px;
+      color: #fff;
+    }
+  }
+  .body-map {
+    background-color: rgba(255, 255, 255, 0.29);
+    ul {
+      li {
+        a {
+          color: #646464;
+          display: block;
+          padding: 2px 20px;
+          &:hover, &:focus, &.active {
+            background-color: #fff;
+            text-decoration: none;
+            outline: medium none;
+          }
+          &.orange {
+            margin-top: 10px;
+            background-color: $economia;
+            color: #fff;
+            &:hover, &:focus, &.active {
+              opacity: 0.8;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.content-map {
+  margin: 20px 0;
+  h1 {
+    color: #6f6f6f;
+    font-size: 22px;
+    margin-bottom: 50px;
+    span {
+      color: $economia;
+    }
+  }
+  .bg-map {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-image: url('../img/bg-map.png');
+    height: 740px;
+    margin: 0 auto;
+    img {
+      display: block;
+      margin-left: 130px;
+    }
+  }
+}
+
+#footer-map {
+  @include gradient(rgba(190,212,231,1), rgba(226,236,244,0.55));
+  height: 170px;
+  margin-top: -155px;
+}
+
+.modal-orange {
+  .modal-header {
+    background-color: #f1f1f1;
+    .modal-title {
+      color: $economia;
+      text-transform: uppercase;
+    }
+  }
+  .table {
+    tr {
+      td {
+        &:first-child {
+          background-color: $economia;
+          border-color: #fff;
+          color: #fff;
+          text-align: left;
+          &[colspan] {
+            background-color: #db7a05;
+            text-align: center;
+          }
+        }
+        text-align: center;
+        vertical-align: middle;
+      }
+      &:nth-child(2), &:nth-child(4) {
+        td {
+          background-color: transparent;
+          border-left-color: transparent;
+          border-right-color: transparent;
         }
       }
     }
