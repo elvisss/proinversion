@@ -1146,4 +1146,29 @@ ul.bullet > li {
     background-image: url("../img/bg-union-europea.png");
     background-size: 83%; }
 
+.float-box {
+  background-color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f3f3f3));
+  background: -webkit-linear-gradient(top, #fff, #f3f3f3);
+  background: -moz-linear-gradient(top, #fff, #f3f3f3);
+  background: -ms-linear-gradient(top, #fff, #f3f3f3);
+  background: -o-linear-gradient(top, #fff, #f3f3f3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#f3f3f3');
+  -webkit-box-shadow: 3px 3px 4px #999;
+  -moz-box-shadow: 3px 3px 4px #999;
+  box-shadow: 3px 3px 4px #999;
+  position: absolute;
+  top: 33px;
+  width: 270px;
+  right: -262px;
+  padding: 20px 12px;
+  z-index: 1;
+  display: none; }
+  .float-box a {
+    color: #747474;
+    display: block;
+    text-transform: uppercase; }
+    .float-box a:hover {
+      color: #006ba7; }
+
 /*# sourceMappingURL=style.css.map */

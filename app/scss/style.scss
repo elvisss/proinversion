@@ -1634,3 +1634,23 @@ ul {
     background-size: 83%;
   }
 }
+
+.float-box {
+  @include gradient(#fff, #f3f3f3);
+  @include box-shadow(3px 3px 4px #999);
+  position: absolute;
+  top: 33px;
+  width: 270px;
+  right: -262px;
+  padding: 20px 12px;
+  z-index: 1;
+  display: none;
+  a {
+    color: #747474;
+    display: block;
+    text-transform: uppercase;
+    &:hover {
+      color: $politica;
+    }
+  }
+}

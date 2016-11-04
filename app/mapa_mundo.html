@@ -112,6 +112,118 @@
                       </ul>
                     </div>
                   </div>
+                  <div class="float-box">
+                    <div class="row">
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#austria">Austria</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#austria">Bélgica</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#bulgaria">Bulgaria</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#chipre">Chipre</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#republica-checa">República Checa</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#dinamarca">Dinamarca</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#estonia">Estonia</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#finlandia">Finlandia</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#francia">Francia</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#alemania">Alemania</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="grecia">Grecia</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#hungria">Hungría</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#irlanda">Irlanda</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#italia">Italia</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#letonia">Letonia</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#lituania">Lituania</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#luxemburgo">Luxemburgo</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#malta">Malta</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#paises-bajos">Países Bajos</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#polonia">Polonia</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#portugal">Portugal</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#rumania">Rumania</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#eslovaquia">Eslovaquia</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#eslovenia">Eslovenia</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#espana">España</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#suecia">Suecia</a>
+                      </div>
+
+                      <div class="col-xs-6">
+                        <a href="#" data-toggle="modal" data-target="#reino-unido">Reino Unido</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="panel panel-default box-map orange-map">
                   <div class="line-top-map">
@@ -2917,7 +3029,11 @@
             // }, 200)
             // combinaciones[comb][i]
           }
-          // $('.pin-map').tooltip({trigger: 'manual'}).tooltip('show');
+          if (comb == 'blue6') {
+            $('.float-box').toggle()
+          } else {
+            $('.float-box').hide()
+          }
         });
 
         $('.pin-map').on('click', function(){
