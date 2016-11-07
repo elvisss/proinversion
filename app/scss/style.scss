@@ -56,10 +56,13 @@ body {
     background: url(../img/bg-lineamiento.jpg) no-repeat center center fixed;
   }
   &.bg-nosotros {
-    background: url(../img/bg-nosotros.jpg) no-repeat center center fixed;
+    background: url(../img/bg-nosotros.JPG) no-repeat center center fixed;
   }
   &.bg-politica {
     background: url(../img/bg-politica.jpg) no-repeat center center fixed;
+  }
+  &.bg-modelo {
+    background: url(../img/bg-modelo.jpg) no-repeat center center fixed;
   }
   &.bg {
     @include background-cover();
@@ -709,6 +712,15 @@ ul {
       font-size: 15px;
     }
   }
+  .sub-introduction {
+    margin-top: 30px;
+    .panel-body {
+      padding: 15px;
+      figure {
+        margin: 0;
+      }
+    }
+  }
   .tab-introduccion {
     background-color: #fff;
     margin-top: 20px;
@@ -956,6 +968,9 @@ ul {
 .content-seccion, .panel-body {
   background-color: #fff;
   padding: 35px 50px;
+  &.bg-transparent {
+    background-color: transparent;
+  }
   h2 {
     font-size: 25px;
     margin: 25px 0 15px;
@@ -1163,6 +1178,57 @@ ul {
       .nav-tabs {
         > li.active > a, > li.active > a:hover, > li.active > a:focus {
           background-color: $politica;
+        }
+      }
+    }
+  }
+}
+
+.bg-modelo {
+  .box-sidebar {
+    .top-sidebar {
+      background-color: $modelo;
+    }
+    .body-sidebar {
+      ul {
+        &.list-categories {
+          li {
+            &:hover, &.active {
+              a {
+                color: $modelo;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .introduction {
+    background-color: $modelo;
+  }
+  .panel-default > .panel-heading {
+    background-color: $modelo;
+  }
+  .content-seccion, .panel-body {
+    h2 {
+      color: $modelo;
+    }
+    ol {
+      li {
+        color: $modelo;
+      }
+    }
+  }
+  #wrap-page {
+    li {
+      &:before {
+        color: $modelo;
+      }
+    }
+    .tab-introduccion {
+      .nav-tabs {
+        > li.active > a, > li.active > a:hover, > li.active > a:focus {
+          background-color: $modelo;
         }
       }
     }
@@ -1652,5 +1718,26 @@ ul {
     &:hover {
       color: $politica;
     }
+  }
+}
+
+.btn-map {
+  display: block;
+  width: 346px;
+  height: 68px;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  position: relative;
+  padding: 0 15px 0 80px;
+  &.perumap {
+    background-image: url('../img/bgbtn-perumap.png');
+  }
+  &.worldmap {
+    background-image: url('../img/bgbtn-worldmap.png');
+  }
+  span {
+    @include transform(translateY(-50%));
+    position: absolute;
+    top: 50%;
   }
 }
