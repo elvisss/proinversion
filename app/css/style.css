@@ -1048,6 +1048,8 @@ ul.bullet > li {
   position: absolute;
   cursor: pointer;
   display: none; }
+  .pin-map[data-show="false"] {
+    cursor: default; }
   .pin-map.tailandia {
     top: 108px;
     left: 14px; }

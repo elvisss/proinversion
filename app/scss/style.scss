@@ -1535,6 +1535,9 @@ ul {
   position: absolute;
   cursor: pointer;
   display: none;
+  &[data-show="false"] {
+    cursor: default;
+  }
   &.tailandia {
     top: 108px;
     left: 14px;

@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.js"></script>
@@ -261,13 +259,13 @@
                     <div class="body-map">
                       <ul class="list-acuerdos">
                         <li>
-                          <a href="#" data-content="green1">- ACUERDOS BILATERALES</a>
+                          <a href="#" data-content="green1" data-show="false">- ACUERDOS BILATERALES</a>
                         </li>
                         <li>
-                          <a href="#" data-content="green2">- Acuerdo de Comercio de Servicios  - TISA</a>
+                          <a href="#" data-content="green2" data-show="false">- Acuerdo de Comercio de Servicios  - TISA</a>
                         </li>
                         <li>
-                          <a href="#" data-content="green3">Programa DOHA para el desarrollo</a>
+                          <a href="#" data-content="green3" data-show="false">- Programa DOHA para el desarrollo</a>
                         </li>
                       </ul>
                     </div>
@@ -3057,9 +3055,8 @@
           'green3': []
         }
 
-        // var blue1 =
-
         $('.list-acuerdos li a').on('click', function(e){
+          var show = $(this).attr('data-show');
           $('.tooltip').hide();
           $('.pin-map').hide();
           e.preventDefault();
@@ -3067,12 +3064,13 @@
           $(this).addClass('active');
           var comb = $(this).attr('data-content');
           for (i = 0; i < combinaciones[comb].length; i++) {
-            // setTimeout(function(){
-              $('.'+combinaciones[comb][i]).show();
-              $('.'+combinaciones[comb][i]).tooltip({trigger: 'manual'}).tooltip('show');
-              // $('.'+combinaciones[comb][i]).tooltip({trigger: 'manual'}).tooltip('show');
-            // }, 200)
-            // combinaciones[comb][i]
+            if (show == "false") {
+              $('.'+combinaciones[comb][i]).attr('data-show',false);
+            } else {
+              $('.'+combinaciones[comb][i]).attr('data-show',true);
+            }
+            $('.'+combinaciones[comb][i]).show();
+            $('.'+combinaciones[comb][i]).tooltip({trigger: 'manual'}).tooltip('show');
           }
           if (comb == 'blue6') {
             $('.float-box').toggle()
@@ -3083,7 +3081,11 @@
 
         $('.pin-map').on('click', function(){
           var target = $(this).attr('data-target');
-          $(''+target).modal();
+          var show = $(this).attr('data-show');
+          console.log(show)
+          if (show == "true") {
+            $(''+target).modal();
+          }
         });
 
       });
