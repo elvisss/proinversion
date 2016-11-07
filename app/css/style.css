@@ -353,7 +353,8 @@ section#home {
 #language {
   position: absolute;
   top: 0;
-  right: 5%; }
+  right: 5%;
+  z-index: 1; }
   #language .languages ul {
     background-color: #ed1d24;
     display: table;
