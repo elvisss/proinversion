@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/bootstrap-theme.css">
     <link href="../css/font-awesome.css" rel="stylesheet">
+    <link href="../css/magnific-popup.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="../js/html5shiv.js"></script>
@@ -30,7 +31,7 @@
                 <span>|</span>
               </li>
               <li>
-                <a href="../mapa-peru.html">Español</a>
+                <a href="../mapa_peru.html">Español</a>
               </li>
             </ul>
           </div>
@@ -57,10 +58,10 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html" class="inicio"><span>HOME</span></a></li>
-                    <li><a href="economic.html" class="economia double active"><span>ECONOMIC<br /> ACTIVITY</span></a></li>
+                    <li><a href="economic.html" class="economia double active"><span>ECONOMIC<br />SOUNDNESS</span></a></li>
                     <li><a href="politics.html" class="politica double"><span>INVESTMENT<br /> POLICY</span></a></li>
-                    <li><a href="government.html" class="lineamiento double"><span>GOVERMENT PLAN<br /> OF PPK</span></a></li>
-                    <li><a href="model.html" class="modelo"><span>MODEL OF APP</span></a></li>
+                    <li><a href="government.html" class="lineamiento double"><span>TOWARDS THE<br />BICENTENNIAL</span></a></li>
+                    <li><a href="model.html" class="modelo double"><span>APP: SHARED<br /> PROGRESS</span></a></li>
                     <li><a href="about-us.html" class="nosotros"><span>ABOUT US</span></a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
@@ -161,6 +162,8 @@
                       <a href="#" data-toggle="modal" data-target="#total-nacional" class="orange">VER CIFRAS DEL TOTAL NACIONAL</a>
                     </li>
                   </ul>
+				  <p>(*) Include Lima and Callao</p>
+
                 </div>
               </div>
             </div>
@@ -1587,6 +1590,7 @@
 
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/bootstrap.js"></script>
+<script type="text/javascript" src="../js/jquery.magnific-popup.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
 
     <script type="text/javascript">
@@ -1597,7 +1601,7 @@
           .mouseover(function(){
             var clase = $(this).attr('class');
             if (clase != 'orange') {
-              $('#mapa-peru').attr('src', 'img/mapa/peru/' + $(this).attr('data-image') + '.png');
+              $('#mapa-peru').attr('src', '../img/mapa/peru/' + $(this).attr('data-image') + '.png');
             }
           })
           .mouseout(function() {
@@ -1605,7 +1609,7 @@
             if (!last) {
               last = '0'
             }
-            $('#mapa-peru').attr('src', 'img/mapa/peru/' + last + '.png');
+            $('#mapa-peru').attr('src', '../img/mapa/peru/' + last + '.png');
           });
 
         $('#departments-list li a').on('click', function(e){
@@ -1615,7 +1619,7 @@
           if (clase != 'orange') {
             $(this).addClass('active');
           } else {
-            $('#mapa-peru').attr('src', 'img/mapa/peru/0.png');
+            $('#mapa-peru').attr('src', '../img/mapa/peru/0.png');
           }
         });
 

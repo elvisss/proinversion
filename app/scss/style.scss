@@ -96,7 +96,7 @@ body {
 
 .fill {
   @include background-cover();
-  background-position: center;
+  background-position: center bottom;
   width: 100%;
   height: 100%;
 }
@@ -326,8 +326,8 @@ section {
     @include border-radius(3px);
     color: white;
     display: inline-block;
-    background-color: $red-footer;
-    font-size: 20px;
+    background-color: $nosotros;
+    font-size: 18px;
     padding: 0px 14px;
   }
   .wrap-footer {
@@ -552,6 +552,9 @@ a {
       text-decoration: underline;
     }
   }
+  &:focus {
+    outline: medium none;
+  }
 }
 
 #page {
@@ -612,12 +615,13 @@ ul {
   }
   .title-img {
     text-align: center;
-    font-weight: bold;
-    font-size: 15px;
-    color: #666;
+    font-size: 20px;
+    color: #555;
     margin-bottom: 30px;
+    font-family: 'BreeBold';
     .sub-title {
-      font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+      font-size: 18px;
+      font-family: 'Bree';
       font-weight: normal;
     }
   }
@@ -628,6 +632,9 @@ ul {
 
 #wrap-page {
   .content-seccion, .panel-body {
+    a {
+      font-weight: bold;
+    }
     p, ul {
       color: #9a9a9a;
       font-size: 15px;
@@ -648,6 +655,9 @@ ul {
         &:before {
           margin-right: 25px;
         }
+      }
+      &.no-m-t {
+        margin-top: 0;
       }
     }
     ol {
@@ -679,7 +689,7 @@ ul {
       }
     }
     figure {
-      margin: 35px 0 60px;
+      margin: 0 0 20px;
       img {
         display: block;
         max-width: 100%;
@@ -690,20 +700,37 @@ ul {
         font-size: 13px;
         color: #505050;
       }
+      p {
+        margin-top: 20px;
+        font-weight: normal;
+        padding: 20px;
+      }
     }
     .title-img {
       text-align: center;
-      font-weight: bold;
-      font-size: 15px;
-      color: #666;
+      font-size: 20px;
+      color: #555;
       margin-bottom: 30px;
+      font-family: 'BreeBold';
       .sub-title {
-        font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        font-size: 18px;
+        font-family: 'Bree';
         font-weight: normal;
       }
     }
     .footer-img {
       margin: 20px 0;
+    }
+  }
+  .panel-body {
+    > figure {
+      margin: 20px 0 40px;
+    }
+  }
+  .tab-pane {
+    p, ul {
+      color: #9a9a9a;
+      font-size: 15px;
     }
   }
   .introduction {
@@ -760,7 +787,7 @@ ul {
       color: #58595b;
     }
     .tab-content > .tab-pane {
-      padding: 42px 44px;
+      padding: 28px 44px;
     }
   }
   .panel-default > .panel-heading {
@@ -938,6 +965,49 @@ ul {
       vertical-align: middle;
     }
   }
+  &.table-zone {
+    thead {
+      tr {
+        color: #fff;
+      }
+    }
+  }
+  &.white-space {
+    tbody {
+      tr {
+        td {
+          &:first-child {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+  &.center-vertical {
+    > thead > tr > th, > tbody > tr > td {
+      text-align: center;
+      vertical-align: middle;
+    }
+    > tbody {
+      > tr {
+        &.box-table {
+          td {
+            &:first-child {
+              text-align: center;
+              & + td {
+                text-align: left;
+              }
+            }
+          }
+        }
+        > td {
+          &:first-child {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
 }
 
 .panel-default > .panel-heading {
@@ -993,11 +1063,14 @@ ul {
 }
 
 .bg-economia {
+  a {
+    color: $economia;
+  }
   .box-sidebar {
     .top-sidebar {
       background-color: $economia;
       h3 {
-        color: #fecf8b;
+        color: #d3a538;
       }
     }
     .body-sidebar {
@@ -1037,6 +1110,9 @@ ul {
 }
 
 .bg-lineamiento {
+  a {
+    color: $lineamiento;
+  }
   .box-sidebar {
     .top-sidebar {
       background-color: $lineamiento;
@@ -1084,6 +1160,9 @@ ul {
 }
 
 .bg-nosotros {
+  a {
+    color: $nosotros;
+  }
   .box-sidebar {
     .top-sidebar {
       background-color: $nosotros;
@@ -1135,6 +1214,9 @@ ul {
 }
 
 .bg-politica {
+  a {
+    color: $politica;
+  }
   .box-sidebar {
     .top-sidebar {
       background-color: $politica;
@@ -1186,6 +1268,9 @@ ul {
 }
 
 .bg-modelo {
+  a {
+    color: $modelo;
+  }
   .box-sidebar {
     .top-sidebar {
       background-color: $modelo;
@@ -1229,6 +1314,15 @@ ul {
     .tab-introduccion {
       .nav-tabs {
         > li.active > a, > li.active > a:hover, > li.active > a:focus {
+          background-color: $modelo;
+        }
+      }
+    }
+  }
+  .table {
+    &.table-zone {
+      thead {
+        tr {
           background-color: $modelo;
         }
       }
@@ -1726,13 +1820,26 @@ ul {
 }
 
 .btn-map {
+  @include border-radius(5px);
+  @include box-shadow(-1px 1px 3px #333);
   display: block;
-  width: 346px;
+  width: auto;
   height: 68px;
   background-repeat: no-repeat;
   background-color: transparent;
   position: relative;
   padding: 0 15px 0 80px;
+  font-size: 12px;
+  @media (min-width: 768px) {
+
+  }
+  @media (min-width: 992px) {
+    width: 346px;
+    font-size: 15px;
+  }
+  @media (min-width: 1210px) {
+
+  }
   &.perumap {
     background-image: url('../img/bgbtn-perumap.png');
   }
@@ -1743,5 +1850,58 @@ ul {
     @include transform(translateY(-50%));
     position: absolute;
     top: 50%;
+  }
+}
+
+/* Custom pop up */
+
+.mfp-figure:after {
+  background-color: #fff;
+}
+
+.modal-header {
+  border-bottom: medium none;
+}
+
+img.mfp-img {
+  padding: 0;
+  background-color: #fff;
+  margin: 40px 0;
+}
+
+.mfp-img {
+ cursor: pointer;
+}
+.mfp-force-scrollbars {
+  &.mfp-wrap {
+      overflow-y: auto !important;
+      overflow-x: auto !important;
+  }
+  .mfp-img {
+    max-width: none;
+  }
+  .mfp-close {
+   position: fixed;
+  }
+
+}
+
+.float-image {
+  img {
+    max-width: 100%;
+    // width: 300px;
+    margin: 20px 0;
+    @media (min-width: 768px) {
+      // width: 200px;
+      // margin: 0;
+    }
+    @media (min-width: 992px) {
+      float: right;
+      width: 200px;
+      margin: 0px 0 20px 20px;
+    }
+    @media (min-width: 1210px) {
+      width: 300px;
+    }
   }
 }

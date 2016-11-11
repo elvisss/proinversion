@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -57,11 +59,11 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html" class="inicio"><span>INICIO</span></a></li>
-                    <li><a href="economia.html" class="economia double"><span>ACTIVIDAD<br /> ECONÓMICA</span></a></li>
-                    <li><a href="politica.html" class="politica double"><span>POLÍTICA DE<br/> INVERSIONES</span></a></li>
-                    <li><a href="gobierno.html" class="lineamiento double"><span>PLAN DE GOBIERNO<br /> DE PPK</span></a></li>
-                    <li><a href="modelo.html" class="modelo active"><span>MODELO DE APP</span></a></li>
-                    <li><a href="nosotros.html" class="nosotros"><span>NOSOTROS</span></a></li>
+                    <li><a href="economia.html" class="economia double"><span>SOLIDEZ <br>ECONÓMICA</span></a></li>
+                    <li><a href="politica.html" class="politica double"><span>BIENVENIDA LA<br/> INVERSIÓN</span></a></li>
+                    <li><a href="gobierno.html" class="lineamiento double"><span>RUMBO AL<br />BICENTENARIO</span></a></li>
+                    <li><a href="modelo.html" class="modelo active double"><span>APP: PROGRESO<br /> COMPARTIDO</span></a></li>
+                   <li><a href="nosotros.html" class="nosotros"><span>¿QUIÉNES SOMOS?</span></a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
@@ -74,10 +76,11 @@
         <section id="page">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div id="scroller-anchor"></div>
               <aside id="sidebar">
                 <div class="box-sidebar">
                   <div class="top-sidebar">
-                    <h3>MODELO APP</h3>
+                    <h3>APP: PROGRESO COMPARTIDO</h3>
                   </div>
                   <div class="body-sidebar">
                     <ul class="list-categories" role="tablist">
@@ -142,7 +145,7 @@
                                   (Millones de US$ del año 2015)
                                 </div>
                               </div>
-                              <img src="img/tablas/tabla11.png" />
+                              <a class="popup-link" href="img/tablas/tabla11.png"><img src="img/tablas/tabla11.png" /></a>
                               <figcaption>
                                 Fuente: Universidad del Pacífico y Asociación para el Fomento de la Infraestructura Nacional (Afin).
                               </figcaption>
@@ -155,7 +158,7 @@
                               <div class="title-img">
                                 Brecha de infraestructura 2016-2025
                               </div>
-                              <img src="img/graficos/grafico18.png" />
+                              <a class="popup-link" href="img/graficos/grafico18.png"><img src="img/graficos/grafico18.png" /></a>
                               <figcaption>
                                 Fuente: Universidad del Pacífico y Asociación para el Fomento de la Infraestructura Nacional (Afin).
                               </figcaption>
@@ -191,6 +194,43 @@
                               <li>Desde el 2000, el Perú cuenta con una agencia especializada en promover los proyectos en la modalidad de APP, lo cual ha permitido acumular experiencia.</li>
                               <li>Los proyectos de APP pueden surgir por iniciativa estatal o privada.</li>
                             </ul>
+                            <div class="title-img">Marco Legal en materia de APP</div>
+                            <table class="table table-zone table-bordered center-align white-space">
+                              <thead>
+                                <tr>
+                                  <th>Norma</th>
+                                  <th>Fecha de publicación</th>
+                                  <th>Denominación</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td><a href="pdf/Constitucion-Pol%C3%ADtica-del-Peru-1993.pdf" target="_blank">Constitución peruana</a></td>
+                                  <td>30-12-1993</td>
+                                  <td>Constitución Política del Perú.</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="pdf/DL 1224.pdf" target="_blank">Decreto Legislativo Nº 1224</a></td>
+                                  <td>25-09-2015</td>
+                                  <td>Ley Marco de Promoción de la Inversión Privada mediante Asociaciones Público Privadas y Proyectos en Activos.</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="pdf/DS410_2015EF.pdf" target="_blank">Decreto Supremo Nº 410-2015-EF</a></td>
+                                  <td>27-12-2015</td>
+                                  <td>Reglamento de la Ley Marco de Promoción de la Inversión Privada mediante Asociaciones Público Privadas y Proyectos en Activos.</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="pdf/10-D_L_674.pdf" target="_blank">Decreto Legislativo Nº 674</a></td>
+                                  <td>27-09-1991</td>
+                                  <td>Ley de Promoción de la Inversión Privada en las Empresas del Estado.</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="pdf/13-D_S_70-92-PCM.pdf" target="_blank">Decreto Supremo Nº 070-92-PCM</a></td>
+                                  <td>17-07-1992</td>
+                                  <td>Reglamento de la Ley de Promoción de la Inversión Privada en las Empresas del Estado.</td>
+                                </tr>
+                              </tbody>
+                            </table>
                           </div>
                         </div>
                       </div>
@@ -206,7 +246,7 @@
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                           <div class="panel-body">
-                            <ul>
+                            <ul class="no-m-t">
                               <li><b>Autofinanciadas</b>: Proyectos que generarán los ingresos necesarios para recuperar la inversión y cubrir los gastos de operación y mantenimiento. Se financian a través de las tarifas, precios o peajes que pagan los usuarios, de modo que no requieren el uso de recursos públicos como cofinanciamiento.</li>
                               <li><b>Cofinanciadas</b>: Proyectos que demandan recursos en efectivo del Estado o necesitan garantías financieras y/o no financieras, para hacerse atractivos para el sector privado. El límite de recursos o garantías gubernamentales para que las APP sean consideradas como cofinanciadas es 5% de la inversión total de cada proyecto.</li>
                             </ul>
@@ -232,7 +272,7 @@
                               <li><b>Solución de controversias</b>: Arbitraje nacional o internacional de derecho, de acuerdo con el monto que es materia de la controversia.</li>
                               <li><b>Adecuada distribución de riesgos</b>: Los riesgos son asignados a la parte con mayores capacidades para administrarlos, buscando mitigar su impacto en la disponibilidad de la infraestructura y/o calidad del servicio.</li>
                               <li><b>Interacción con el mercado</b>: Se reciben observaciones y sugerencias para ser incorporadas a las bases del concurso y/o contrato de concesión.</li>
-                              <li>• Licencia social y ambiental.</li>
+                              <li>Licencia social y ambiental.</li>
                               <li><b>Transparencia</b>: Libre acceso a la información sobre el desarrollo de las licitaciones.</li>
                               <li><b>Adecuada calificación de postores</b>: Durante el proceso se establece requisitos técnicos, legales y financieros para la selección de empresas o consorcios participantes.</li>
                             </ul>
@@ -257,12 +297,9 @@
                         </div>
                         <div id="collapseOne2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne2">
                           <div class="panel-body">
-                            <p>Las APP tienen 5 fases: planeamiento y programación, formulación, estructuración, transacción y ejecución contractual, las cuales se describen en este <a href="#">enlace</a>.</p>
-                            <figure>
-                              <div class="title-img">
-                                Procedimiento que siguen las APP por iniciativa estatal
-                              </div>
-                              <img src="img/flujogramas/flujograma4.png" />
+                            <p>Las APP tienen 5 fases: planeamiento y programación, formulación, estructuración, transacción y ejecución contractual, las cuales se describen en este <a target="_blank" href="img/flujogramas/app.jpg" title="Procedimiento que siguen las APP por iniciativa estatal">enlace</a>.</p>
+							             <figure>
+                              <a class="popup-link" href="img/flujogramas/app.jpg"><img src="img/flujogramas/app.jpg"></a>
                             </figure>
                           </div>
                         </div>
@@ -310,7 +347,7 @@
                             </a>
                           </h4>
                         </div>
-                        <div id="collapseTwo3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo3">
+                        <div id="collapseTwo3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo3">
                           <div class="panel-body">
                             <ul>
                               <li>El proponente de la iniciativa tiene derecho a igualar la oferta económica que hubiese quedado en primer lugar en caso de que la iniciativa sea concesionada a través de concurso público.</li>
@@ -321,30 +358,19 @@
                       </div>
 
                       <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingTwo3">
+                        <div class="panel-heading" role="tab" id="headingThree3">
                           <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseTwo3" aria-expanded="true" aria-controls="collapseTwo3">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree3" aria-expanded="true" aria-controls="collapseThree3">
                               Flujograma
                               <i class="fa fa-angle-up"></i>
                             </a>
                           </h4>
                         </div>
-                        <div id="collapseTwo3" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo3">
+                        <div id="collapseThree3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree3">
                           <div class="panel-body">
-                            <p>El procedimiento que siguen las iniciativas privadas, ya sean autofinanciadas (IPA) o cofinanciadas (IPC), se presenta a <a href="#">continuación</a>.</p>
+                            <p>El procedimiento que siguen las iniciativas privadas, ya sean autofinanciadas (IPA) o cofinanciadas (IPC), se presenta a <a href="img/flujogramas/ipc.jpg" target="_blank">continuación</a>.</p>
                             <figure>
-                              <div class="title-img">
-                                Procedimientos de una IPA
-                              </div>
-                              <img src="img/flujogramas/flujograma5.png" />
-                              <figcaption>OJO: Cambiar el texto del paso 1: Presentación: se presentan ante el Órgano Promotor de la Inversión Privada (OPIP) competente en cualquier momento del año.</figcaption>
-                            </figure>
-                            <figure>
-                              <div class="title-img">
-                                Procedimientos de una IPC
-                              </div>
-                              <img src="img/flujogramas/flujograma6.png" />
-                              <figcaption>OJO: Cambiar el texto del paso 1 y eliminar el paso 2: Presentación: se presentan ante ProInversión en la oportunidad y sobre las materias que se determinen mediante Decreto Supremo.</figcaption>
+                              <a class="popup-link" href="img/flujogramas/ipc.jpg"><img src="img/flujogramas/ipc.jpg"></a>
                             </figure>
                           </div>
                         </div>
@@ -369,18 +395,153 @@
                         <div id="collapseOne4" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne4">
                           <div class="panel-body">
                             <figure class="img-post">
-                              <img src="img/pages/modelo3.jpg" />
+                              <img src="img/pages/modelo3.JPG" />
                             </figure>
-                            <p>A setiembre del 2016, la cartera de proyectos de APP (por iniciativa estatal y privada) abarca sectores como educación, hidrocarburos, salud, transporte (puertos, viales y ferroviarios), telecomunicaciones y eléctricos, entre otros. La presentación de estas iniciativas se encuentra en este <a href="pdf/PPT Proyectos__ESP.PDF" target="_blank">enlace</a>.</p>
+                            <p>A setiembre del 2016, la cartera de proyectos de APP (por iniciativa estatal y privada) abarca sectores como educación, hidrocarburos, salud, transporte (puertos, viales y ferroviarios), telecomunicaciones y eléctricos, entre otros. La presentación de estas iniciativas se encuentra en este <a href="pdf/ppt proyectos proinversion ESP.PDF" target="_blank">enlace</a>.</p>
                             <figure>
                               <div class="title-img">
                                 Cartera de proyectos de PROINVERSION a noviembre, 2016
                               </div>
-                              <img src="img/tablas/tabla3.png" />
-                              <figcaption>
-                                (*) Declaratoria de interés.
-                              </figcaption>
                             </figure>
+                            <table class="table table-zone table-bordered center-vertical">
+                              <thead>
+                                <tr>
+                                  <th>Sector</th>
+                                  <th>Proyecto</th>
+                                  <th>Iniciativa</th>
+                                  <th>Estado</th>
+                                  <th>Monto estimado (Millones de US$)</th>
+                                  <th>Fecha de adjudicación</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr class="box-table">
+                                  <td rowspan="8">Transporte</td>
+                                  <td><a href="http://www.proyectosapp.pe/modulos/JER/PlantillaProyecto.aspx?ARE=0&PFL=2&JER=5845" target="_blank">LONGITUDINAL DE LA SIERRA TRAMO 4</a></td>
+                                  <td>Estatal</td>
+                                  <td>Convocado</td>
+                                  <td>446</td>
+                                  <td>I TRIM 2017</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="http://www.proyectosapp.pe/modulos/JER/PlantillaProyecto.aspx?ARE=0&PFL=2&JER=8332&SEC=22" target="_blank">HIDROVÍA AMAZÓNICA</a></td>
+                                  <td>Estatal</td>
+                                  <td>Convocado</td>
+                                  <td>70</td>
+                                  <td>I TRIM 2017</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="http://www.proyectosapp.pe/modulos/JER/PlantillaProyecto.aspx?ARE=0&PFL=2&JER=8161" target="_blank">FERROCARRIL HUANCAYO - HUANCAVELICA</a></td>
+                                  <td>Estatal</td>
+                                  <td>Convocado</td>
+                                  <td>204</td>
+                                  <td>I TRIM 2017</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="http://www.proyectosapp.pe/modulos/JER/PlantillaProyectoIP.aspx?ARE=0&PFL=2&JER=7746&SEC=31" target="_blank">PANAMERICANA SUR: TRAMO ICA- DV. QUILCA</a></td>
+                                  <td>Privada</td>
+                                  <td>En evaluación</td>
+                                  <td>En evaluación</td>
+                                  <td>I TRIM 2017</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="http://www.proyectosapp.pe/modulos/JER/PlantillaProyecto.aspx?ARE=0&PFL=2&JER=8162&SEC=22" target="_blank">LÍNEA 3 DEL METRO DE LIMA Y CALLAO</a></td>
+                                  <td>Estatal</td>
+                                  <td>No convocado</td>
+                                  <td>En evaluación</td>
+                                  <td>Por definir</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="http://www.proyectosapp.pe/modulos/JER/PlantillaProyecto.aspx?ARE=0&PFL=2&JER=8163&SEC=22" target="_blank">LÍNEA 4 DEL METRO DE LIMA Y CALLAO</a></td>
+                                  <td>Estatal</td>
+                                  <td>No convocado</td>
+                                  <td>En evaluación</td>
+                                  <td>Por definir</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="http://www.proyectosapp.pe/modulos/JER/PlantillaProyecto.aspx?ARE=0&PFL=2&JER=5851" target="_blank">LONGITUDINAL DE LA SIERRA TRAMO 5</a></td>
+                                  <td>Estatal</td>
+                                  <td>En evaluación</td>
+                                  <td>En evaluación</td>
+                                  <td>IV TRIM 2016*</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="http://www.proyectosapp.pe/modulos/JER/PlantillaProyectosResumenes.aspx?are=0&prf=2&jer=5383&sec=22" target="_blank">TERMINALES PORTUARIOS</a></td>
+                                  <td>Privada</td>
+                                  <td>En evaluación</td>
+                                  <td>En evaluación</td>
+                                  <td>IV TRIM 2016*</td>
+                                </tr>
+                                <tr class="box-table">
+                                  <td rowspan="2">Electricidad</td>
+                                  <td><a href="http://www.proyectosapp.pe/modulos/JER/PlantillaProyecto.aspx?ARE=0&PFL=2&JER=8025" target="_blank">CENTRAL TERMICA DE QUILLABAMBA</a></td>
+                                  <td>Estatal</td>
+                                  <td>Convocado</td>
+                                  <td>180</td>
+                                  <td>Por definir</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="http://www.proyectosapp.pe/modulos/JER/PlantillaProyecto.aspx?ARE=0&PFL=2&JER=8361" target="_blank">Línea de Transmisión Aguaytía-Pucallpa 138 kV</a></td>
+                                  <td>Estatal</td>
+                                  <td>Convocado</td>
+                                  <td>20,3</td>
+                                  <td>IV TRIM 2016</td>
+                                </tr>
+                                <tr class="box-table">
+                                  <td>Hidrocarburos</td>
+                                  <td><a href="http://www.proyectosapp.pe/modulos/JER/PlantillaProyecto.aspx?ARE=0&PFL=2&JER=8017" target="_blank">MASIFICACIÓN DEL USO DE GAS NATURAL PARA EL CENTRO Y SUR DEL PERÚ</a></td>
+                                  <td>Estatal</td>
+                                  <td>Convocado</td>
+                                  <td>300</td>
+                                  <td>Por definir</td>
+                                </tr>
+                                <tr class="box-table">
+                                  <td>Agricultura</td>
+                                  <td><a href="http://www.proyectosapp.pe/modulos/JER/PlantillaProyecto.aspx?ARE=0&PFL=2&JER=7917" target="_blank">SUBASTA DE TIERRAS AGRICOLAS – PROYECTO CHAVIMOCHIC</a></td>
+                                  <td>Estatal</td>
+                                  <td>No convocado</td>
+                                  <td>US$ 5000 / ha</td>
+                                  <td>I SEM 2017</td>
+                                </tr>
+                                <tr class="box-table">
+                                  <td rowspan="2">Saneamiento y salud</td>
+                                  <td><a href="http://www.proyectosapp.pe/modulos/JER/PlantillaProyecto.aspx?ARE=0&PFL=2&JER=5830" target="_blank">OBRAS DE CABECERA Y CONDUCCIÓN PARA EL ABASTECIMIENTO DE AGUA POTABLE PARA LIMA</a></td>
+                                  <td>Estatal</td>
+                                  <td>Convocado</td>
+                                  <td>600</td>
+                                  <td>I TRIM 2017</td>
+                                </tr>
+                                <tr>
+                                  <td><a href="http://www.proyectosapp.pe/modulos/JER/PlantillaProyectosResumenes.aspx?are=0&prf=2&jer=5680&sec=22" target="_blank">TRES NUEVOS CENTROS HOSPITALARIOS DE ALTA COMPLEJIDAD – ESSALUD</a></td>
+                                  <td>Estatal</td>
+                                  <td>No convocado</td>
+                                  <td>424</td>
+                                  <td>Por definir</td>
+                                </tr>
+                                <tr class="box-table">
+                                  <td rowspan="4">Minería</td>
+                                  <td>Colca (Exploración)</td>
+                                  <td rowspan="4">Estatal</td>
+                                  <td rowspan="4">No convocado</td>
+                                  <td rowspan="4">En evaluación</td>
+                                  <td>II TRIM 2017</td>
+                                </tr>
+                                <tr>
+                                  <td>Jalaoca (Exploración)</td>
+                                  <td>III TRIM 2017</td>
+                                </tr>
+                                <tr>
+                                  <td>Antabamba (Exploración)</td>
+                                  <td rowspan="2">En evaluación</td>
+                                </tr>
+                                <tr>
+                                  <td>Pampa Grande (Exploración)</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <div class=".footer-img">
+                              (*) Declaratoria de interés.
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -414,27 +575,18 @@
                               <div class="title-img">
                                 Evolución de las APP
                               </div>
-                              <img src="img/graficos/grafico19.png" />
+                              <a class="popup-link" href="img/graficos/grafico19.png"><img src="img/graficos/grafico19.png" /></a>
                               <figcaption>
                                 * Al mes de noviembre 2016
                               </figcaption>
                             </figure>
                             <figure>
                               <div class="title-img">
-                                APP por sectores (2000 - 2016)
+                                APP por sectores (2000 - 2016*)
                               </div>
-                              <img src="img/graficos/grafico20.png" />
+                              <a class="popup-link" href="img/graficos/grafico20.png"><img src="img/graficos/grafico20.png" /></a>
                               <figcaption>
                                 *A noviembre 2016.
-                              </figcaption>
-                            </figure>
-                            <figure>
-                              <div class="title-img">
-                                Proyectos emblemáticos
-                              </div>
-                              <img src="img/graficos/grafico21.png" />
-                              <figcaption>
-                                OJO: Se incluirá un mapa interactivo con los proyectos de la tabla adjunta. Referencia: http://www.proyectosapp.pe/mapadeproyectos
                               </figcaption>
                             </figure>
                           </div>
@@ -503,17 +655,17 @@
                     <div class="col-xs-12">
                       <div class="title-footer">Contacto:</div>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-xs-12 col-sm-6">
                       <div class="wrap-footer">
                         <div class="wrap-content-footer">
                           Av. Enrique Canaval Moreyra<br /> Nº 150, Piso 9<br /> San Isidro – Lima
                         </div>
                       </div>
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-xs-12 col-sm-6">
                       <div class="wrap-footer">
                         <div class="wrap-content-footer">
-                          Teléfono: (+51) 200-1200<br />
+                          Teléfono: 200-1200<br />
                           <a href="mailto:info@proinversion.com">contact@proinversion.gob.pe</a>
                         </div>
                       </div>
@@ -532,6 +684,8 @@
 
   	<script type="text/javascript" src="js/jquery.js"></script>
   	<script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+    <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
     <script type="text/javascript" src="js/page.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
