@@ -146,24 +146,19 @@ body.bg-mapa {
   position: absolute;
   bottom: 40px;
   z-index: 9999;
-  width: 100%;
   margin: 0 auto;
-  margin-left: 0; }
+  left: 40px; }
   #logo a {
     display: block;
-    padding: 0 20px;
     max-width: 330px;
     margin: 0 auto; }
     #logo a img {
       width: 80%; }
   @media (min-width: 790px) {
-    #logo {
-      margin-left: 80px;
-      width: auto; }
-      #logo a {
-        margin: 0; }
-        #logo a img {
-          width: 100%; } }
+    #logo a {
+      margin: 0; }
+      #logo a img {
+        width: 100%; } }
 
 #slider-home .slide-message {
   position: absolute;
@@ -218,14 +213,16 @@ body.bg-mapa {
     -moz-transform: scale(0.7);
     -ms-transform: scale(0.7);
     -o-transform: scale(0.7);
-    transform: scale(0.7); }
+    transform: scale(0.7);
+    display: none; }
     @media (min-width: 790px) {
       #marca-peru img {
         -webkit-transform: scale(1);
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
-        transform: scale(1); } }
+        transform: scale(1);
+        display: block; } }
 
 #franja-roja {
   -webkit-background-size: cover;
