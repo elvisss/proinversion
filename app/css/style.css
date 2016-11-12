@@ -166,7 +166,8 @@ body.bg-mapa {
   width: 65%;
   left: 17.5%;
   color: #fff;
-  font-family: "BreeBoldItalic";
+  font-family: "BreeBoldItalic", Calibri, Arial, sans-serif;
+  font-style: italic;
   color: #fff; }
   #slider-home .slide-message h2 {
     font-size: 30px;
@@ -521,10 +522,11 @@ ul.bullet > li {
     font-size: 20px;
     color: #555;
     margin-bottom: 30px;
-    font-family: 'BreeBold'; }
+    font-family: 'BreeBold', Calibri, Arial, sans-serif;
+    font-weight: bold; }
     .modal-content .title-img .sub-title {
       font-size: 18px;
-      font-family: 'Bree';
+      font-family: 'Bree', Calibri, Arial, sans-serif;
       font-weight: normal; }
   .modal-content .footer-img {
     margin: 20px 0; }
@@ -584,10 +586,11 @@ ul.bullet > li {
   font-size: 20px;
   color: #555;
   margin-bottom: 30px;
-  font-family: 'BreeBold'; }
+  font-family: 'BreeBold', Calibri, Arial, sans-serif;
+  font-weight: bold; }
   #wrap-page .content-seccion .title-img .sub-title, #wrap-page .panel-body .title-img .sub-title {
     font-size: 18px;
-    font-family: 'Bree';
+    font-family: 'Bree', Calibri, Arial, sans-serif;
     font-weight: normal; }
 #wrap-page .content-seccion .footer-img, #wrap-page .panel-body .footer-img {
   margin: 20px 0; }
@@ -649,7 +652,8 @@ ul.bullet > li {
   .box-sidebar .top-sidebar h3 {
     padding: 0 10px;
     color: #fff;
-    font-family: "Bree";
+    font-family: "Bree", Calibri, Arial, sans-serif;
+    font-weight: normal;
     font-size: 25px; }
     .box-sidebar .top-sidebar h3 span {
       color: #ffffff; }
@@ -667,7 +671,8 @@ ul.bullet > li {
       line-height: 16px;
       display: block;
       padding: 15px 33px 15px 18px;
-      font-family: "Bree"; }
+      font-family: "Bree", Calibri, Arial, sans-serif;
+      font-weight: normal; }
       .box-sidebar .body-sidebar ul.list-categories li a:hover, .box-sidebar .body-sidebar ul.list-categories li a:focus {
         text-decoration: none; }
       .box-sidebar .body-sidebar ul.list-categories li a .fa {
@@ -726,13 +731,15 @@ ul.bullet > li {
     color: #fff;
     margin-bottom: 10px;
     text-transform: uppercase;
-    font-family: 'BreeBold'; }
+    font-family: 'BreeBold', Calibri, Arial, sans-serif;
+    font-weight: bold; }
   .introduction h3 {
     color: #fff2df;
     font-size: 25px;
     margin-bottom: 10px;
     text-transform: uppercase;
-    font-family: 'Bree'; }
+    font-family: 'Bree', Calibri, Arial, sans-serif;
+    font-weight: normal; }
   .introduction ul {
     margin: 0 0 10px; }
     .introduction ul li {
@@ -792,7 +799,8 @@ ul.bullet > li {
     font-size: 18px;
     padding: 17px 40px 13px;
     text-decoration: none;
-    font-family: 'Bree'; }
+    font-family: 'Bree', Calibri, Arial, sans-serif;
+    font-weight: normal; }
     .panel-default > .panel-heading a .fa {
       float: right; }
     .panel-default > .panel-heading a.collapsed .fa.fa-angle-up:before {

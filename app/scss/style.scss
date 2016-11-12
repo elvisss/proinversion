@@ -152,7 +152,8 @@ body {
     width: 65%;
     left: 17.5%;
     color: #fff;
-    font-family: "BreeBoldItalic";
+    font-family: "BreeBoldItalic", Calibri, Arial, sans-serif;
+    font-style: italic;
     color: #fff;
     h2 {
       font-size: 30px;
@@ -627,10 +628,11 @@ ul {
     font-size: 20px;
     color: #555;
     margin-bottom: 30px;
-    font-family: 'BreeBold';
+    font-family: 'BreeBold', Calibri, Arial, sans-serif;
+    font-weight: bold;
     .sub-title {
       font-size: 18px;
-      font-family: 'Bree';
+      font-family: 'Bree', Calibri, Arial, sans-serif;
       font-weight: normal;
     }
   }
@@ -720,10 +722,11 @@ ul {
       font-size: 20px;
       color: #555;
       margin-bottom: 30px;
-      font-family: 'BreeBold';
+      font-family: 'BreeBold', Calibri, Arial, sans-serif;
+      font-weight: bold;
       .sub-title {
         font-size: 18px;
-        font-family: 'Bree';
+        font-family: 'Bree', Calibri, Arial, sans-serif;
         font-weight: normal;
       }
     }
@@ -812,7 +815,8 @@ ul {
     h3 {
       padding: 0 10px;
       color: #fff;
-      font-family: "Bree";
+      font-family: "Bree", Calibri, Arial, sans-serif;
+      font-weight: normal;
       font-size: 25px;
       span {
         color: #ffffff;
@@ -835,7 +839,8 @@ ul {
             line-height: 16px;
             display: block;
             padding: 15px 33px 15px 18px;
-            font-family: "Bree";
+            font-family: "Bree", Calibri, Arial, sans-serif;
+            font-weight: normal;
             &:hover, &:focus {
               text-decoration: none;
             }
@@ -924,14 +929,16 @@ ul {
     // color: #fff2df;
     margin-bottom: 10px;
     text-transform: uppercase;
-    font-family: 'BreeBold';
+    font-family: 'BreeBold', Calibri, Arial, sans-serif;
+    font-weight: bold;
   }
   h3 {
     color: #fff2df;
     font-size: 25px;
     margin-bottom: 10px;
     text-transform: uppercase;
-    font-family: 'Bree';
+    font-family: 'Bree', Calibri, Arial, sans-serif;
+    font-weight: normal;
   }
   ul {
     margin: 0 0 10px;
@@ -1039,7 +1046,8 @@ ul {
     font-size: 18px;
     padding: 17px 40px 13px;
     text-decoration: none;
-    font-family: 'Bree';
+    font-family: 'Bree', Calibri, Arial, sans-serif;
+    font-weight: normal;
     .fa {
       float: right;
     }
