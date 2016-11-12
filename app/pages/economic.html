@@ -685,10 +685,10 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" data-video="myVideo1" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <video id="myVideo" width="100%" controls>
+          <video id="myVideo1" width="100%" controls>
             <source src="../video/video1.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
@@ -696,33 +696,33 @@
       </div>
     </div>
 
-    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" data-video="myVideo2" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <video id="myVideo" width="100%" controls>
-            <source src="../video/video2.mp4" type="video/mp4">
+          <video id="myVideo2" width="100%" controls>
+            <source src="../video/video1.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
         </div>
       </div>
     </div>
 
-    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" data-video="myVideo3" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <video id="myVideo" width="100%" controls>
-            <source src="../video/video3.mp4" type="video/mp4">
+          <video id="myVideo3" width="100%" controls>
+            <source src="../video/video1.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
         </div>
       </div>
     </div>
 
-    <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" data-video="myVideo4" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <video id="myVideo" width="100%" controls>
-            <source src="../video/video4Esp.mp4" type="video/mp4">
+          <video id="myVideo4" width="100%" controls>
+            <source src="../video/video1.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
         </div>
@@ -741,7 +741,6 @@
       $(function() {
 
         $('.list-categories a').on('click', function() {
-          console.log($(this).attr('href'))
           if ($(this).attr('href') != '#seccion1') {
             $('.foot-sidebar a.doc').removeClass('show');
           } else {
@@ -749,12 +748,9 @@
           }
         });
 
-        // $('#myModal').on('show.bs.modal', function () {
-        //   $('#myVideo')[0].play();
-        // });
-
-        $('#myModal').on('hide.bs.modal', function () {
-          $('#myVideo')[0].pause()
+        $('.modal').on('hide.bs.modal', function () {
+          var data_video = $(this).data('video')
+          $('#'+data_video)[0].pause()
         });
 
       });
