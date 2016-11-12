@@ -749,8 +749,15 @@ ul.bullet > li {
   border: 0 solid; }
   .panel .panel-body {
     font-family: Arial, sans-serif;
-    padding: 20px 40px;
+    padding: 20px;
     font-size: 15px; }
+    @media (min-width: 768px) {
+      .panel .panel-body {
+        padding: 20px 40px; } }
+
+.table-overflow {
+  width: 100%;
+  overflow-x: auto; }
 
 .table.center-align > tbody > tr > td {
   text-align: center;
@@ -762,8 +769,9 @@ ul.bullet > li {
   vertical-align: middle; }
 .table.table-zone thead tr {
   color: #fff; }
-.table.white-space tbody tr td:first-child {
-  white-space: nowrap; }
+@media (min-width: 992px) {
+  .table.white-space tbody tr td:first-child {
+    white-space: nowrap; } }
 .table.center-vertical > thead > tr > th, .table.center-vertical > tbody > tr > td {
   text-align: center;
   vertical-align: middle; }

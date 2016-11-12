@@ -953,9 +953,17 @@ ul {
   border: 0 solid;
   .panel-body {
     font-family: $font-family-page;
-    padding: 20px 40px;
+    padding: 20px;
     font-size: 15px;
+    @media (min-width: 768px) {
+      padding: 20px 40px;
+    }
   }
+}
+
+.table-overflow {
+  width: 100%;
+  overflow-x: auto;
 }
 
 .table {
@@ -986,7 +994,9 @@ ul {
       tr {
         td {
           &:first-child {
-            white-space: nowrap;
+            @media (min-width: 992px) {
+              white-space: nowrap;
+            }
           }
         }
       }
