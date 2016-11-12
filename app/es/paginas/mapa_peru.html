@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>ProInversion APEC</title>
-    <link rel="icon" href="../favicon.ico" type="image/ico">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/bootstrap-theme.css">
-    <link href="../css/font-awesome.css" rel="stylesheet">
-    <link href="../css/magnific-popup.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
+    <link rel="icon" href="../../favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/bootstrap-theme.css">
+    <link href="../../css/font-awesome.css" rel="stylesheet">
+    <link href="../../css/magnific-popup.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
     <!--[if lt IE 9]>
-      <script src="../js/html5shiv.js"></script>
-      <script src="../js/respond.js"></script>
+      <script src="../../js/html5shiv.js"></script>
+      <script src="../../js/respond.js"></script>
     <![endif]-->
   </head>
   <body class="bg-mapa">
@@ -26,7 +26,7 @@
           <div class="languages">
             <ul>
               <li>
-                <a href="../peru-map.html">English</a>
+                <a href="../../pages/peru-map.html">English</a>
               </li>
               <li>
                 <span>|</span>
@@ -50,15 +50,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="index.html">
-                    <img src="../img/logo-es.png">
+                  <a class="navbar-brand" href="../index.html">
+                    <img src="../../img/logo-es.png">
                   </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a href="index.html" class="inicio"><span>INICIO</span></a></li>
+                    <li><a href="../index.html" class="inicio"><span>INICIO</span></a></li>
                     <li><a href="economia.html" class="economia double active"><span>SOLIDEZ<br /> ECONÓMICA</span></a></li>
                     <li><a href="politica.html" class="politica double"><span>BIENVENIDA LA<br/> INVERSIÓN</span></a></li>
                     <li><a href="gobierno.html" class="lineamiento double"><span>RUMBO AL<br />BICENTENARIO</span></a></li>
@@ -172,7 +172,7 @@
                 <div class="text-center">
                   <h1>PRINCIPALES <span>INDICADORES POR DEPARTAMENTOS</span></h1>
                   <div class="bg-map">
-                    <img id="mapa-peru" src="../img/mapa/peru/0.png">
+                    <img id="mapa-peru" src="../../img/mapa/peru/0.png">
                   </div>
                 </div>
               </div>
@@ -1588,10 +1588,10 @@
 
     <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click para retornar hacía arriba de la página" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
-    <script type="text/javascript" src="../js/jquery.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.js"></script>
-    <script type="text/javascript" src="../js/jquery.magnific-popup.js"></script>
-    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../../js/jquery.js"></script>
+    <script type="text/javascript" src="../../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../../js/jquery.magnific-popup.js"></script>
+    <script type="text/javascript" src="../../js/main.js"></script>
 
     <script type="text/javascript">
 
@@ -1601,7 +1601,7 @@
           .mouseover(function(){
             var clase = $(this).attr('class');
             if (clase != 'orange') {
-              $('#mapa-peru').attr('src', '../img/mapa/peru/' + $(this).attr('data-image') + '.png');
+              $('#mapa-peru').attr('src', '../../img/mapa/peru/' + $(this).attr('data-image') + '.png');
             }
           })
           .mouseout(function() {
@@ -1609,7 +1609,7 @@
             if (!last) {
               last = '0'
             }
-            $('#mapa-peru').attr('src', '../img/mapa/peru/' + last + '.png');
+            $('#mapa-peru').attr('src', '../../img/mapa/peru/' + last + '.png');
           });
 
         $('#departments-list li a').on('click', function(e){
@@ -1619,7 +1619,7 @@
           if (clase != 'orange') {
             $(this).addClass('active');
           } else {
-            $('#mapa-peru').attr('src', '../img/mapa/peru/0.png');
+            $('#mapa-peru').attr('src', '../../img/mapa/peru/0.png');
           }
         });
 

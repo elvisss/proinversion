@@ -48,7 +48,7 @@ $(function(){
 
     $('.popup-link').magnificPopup({
       type: 'image',
-      closeBtnInside: false,
+      // closeBtnInside: false,
       closeOnContentClick: false,
 
       callbacks: {
@@ -59,7 +59,7 @@ $(function(){
           });
         },
         beforeClose: function() {
-              this.wrap.off('click.pinhandler');
+          this.wrap.off('click.pinhandler');
           this.wrap.removeClass('mfp-force-scrollbars');
         }
       },

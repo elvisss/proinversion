@@ -88,7 +88,7 @@ body.bg-economia {
 body.bg-lineamiento {
   background: url(../img/bg-lineamiento.jpg) no-repeat center center fixed; }
 body.bg-nosotros {
-  background: url(../img/bg-nosotros.JPG) no-repeat center center fixed; }
+  background: url(../img/bg-nosotros.jpg) no-repeat center center fixed; }
 body.bg-politica {
   background: url(../img/bg-politica.jpg) no-repeat center center fixed; }
 body.bg-modelo {
@@ -144,7 +144,7 @@ body.bg-mapa {
 
 #logo {
   position: absolute;
-  top: 40px;
+  bottom: 40px;
   z-index: 9999;
   width: 100%;
   margin: 0 auto;
@@ -1298,7 +1298,9 @@ img.mfp-img {
 .mfp-force-scrollbars .mfp-img {
   max-width: none; }
 .mfp-force-scrollbars .mfp-close {
-  position: fixed; }
+  position: fixed;
+  top: 0;
+  right: 44px; }
 
 .float-image img {
   max-width: 100%;
