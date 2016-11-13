@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport"	content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>ProInversion APEC</title>
-    <link rel="icon" href="../../favicon.ico" type="image/ico">
+    <link rel="icon" href="../../img/favicon.ico" type="image/ico">
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/bootstrap-theme.css">
     <link href="../../css/font-awesome.css" rel="stylesheet">
@@ -117,7 +117,7 @@
                     </ul>
                   </div>
                   <div class="foot-sidebar">
-                    <a href="#" data-toggle="modal" data-target="#myModal">
+                    <a href="#" data-toggle="modal" data-target="#myModal1">
                       <div class="row">
                         <div class="col-xs-3">
                           <img src="../../img/Video-politica.png">
@@ -789,11 +789,11 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" data-video="myVideo1" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <video id="myVideo" width="100%" controls>
-            <source src="../../video/video1.mp4" type="video/mp4">
+          <video id="myVideo1" width="100%" controls>
+            <source src="../../video/videoPoliticaEsp.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
         </div>
@@ -807,6 +807,17 @@
     <script type="text/javascript" src="../../js/jquery.magnific-popup.js"></script>
     <script type="text/javascript" src="../../js/page.js"></script>
     <script type="text/javascript" src="../../js/main.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+
+        $('.modal').on('hide.bs.modal', function () {
+          var data_video = $(this).data('video')
+          $('#'+data_video)[0].pause();
+        });
+
+      });
+    </script>
 
 	</body>
 </html>

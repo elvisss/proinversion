@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport"	content="width=device-width, initial-scale=1, maximum-scale=1">
 		<title>ProInversion APEC</title>
-    <link rel="icon" href="../../favicon.ico" type="image/ico">
+    <link rel="icon" href="../../img/favicon.ico" type="image/ico">
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/bootstrap-theme.css">
     <link href="../../css/font-awesome.css" rel="stylesheet">
@@ -678,12 +678,11 @@
     </div>
 
     <!-- Modal -->
-    <!-- Modal -->
     <div class="modal fade" data-video="myVideo1" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <video id="myVideo1" width="100%" controls>
-            <source src="../../video/video1.mp4" type="video/mp4">
+            <source src="../../video/video1Esp.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
         </div>
@@ -694,7 +693,7 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <video id="myVideo2" width="100%" controls>
-            <source src="../../video/video1.mp4" type="video/mp4">
+            <source src="../../video/video2Esp.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
         </div>
@@ -705,24 +704,12 @@
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <video id="myVideo3" width="100%" controls>
-            <source src="../../video/video1.mp4" type="video/mp4">
+            <source src="../../video/video3Esp.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
           </video>
         </div>
       </div>
     </div>
-
-    <div class="modal fade" data-video="myVideo4" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <video id="myVideo4" width="100%" controls>
-            <source src="../../video/video1.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-          </video>
-        </div>
-      </div>
-    </div>
-
 
     <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click para retornar hacía arriba de la página" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
@@ -736,7 +723,6 @@
       $(function() {
 
         $('.list-categories a').on('click', function() {
-          console.log($(this).attr('href'))
           if ($(this).attr('href') != '#seccion1') {
             $('.foot-sidebar a.doc').removeClass('show');
           } else {
@@ -746,7 +732,7 @@
 
         $('.modal').on('hide.bs.modal', function () {
           var data_video = $(this).data('video')
-          $('#'+data_video)[0].pause()
+          $('#'+data_video)[0].pause();
         });
 
       });
