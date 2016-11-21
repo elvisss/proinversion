@@ -530,6 +530,8 @@ ul.bullet > li {
       font-weight: normal; }
   .modal-content .footer-img {
     margin: 20px 0; }
+  .modal-content > iframe {
+    display: block; }
 
 #wrap-page .content-seccion a, #wrap-page .panel-body a {
   font-weight: bold; }

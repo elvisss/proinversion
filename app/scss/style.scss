@@ -639,6 +639,9 @@ ul {
   .footer-img {
     margin: 20px 0;
   }
+  > iframe {
+    display: block;
+  }
 }
 
 #wrap-page {
