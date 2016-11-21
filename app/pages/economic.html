@@ -688,7 +688,7 @@
     <div class="modal fade" data-video="myVideo1" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <iframe id="myVideo1" class="ytplayer" width="100%" height="450" src="https://www.youtube.com/embed/5_nI2BrULDM?enablejsapi=1&theme=light&showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe id="myVideo1" class="ytplayer" width="100%" height="450" src="https://www.youtube.com/embed/5_nI2BrULDM?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -696,7 +696,7 @@
     <div class="modal fade" data-video="myVideo2" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <iframe id="myVideo2" class="ytplayer" width="100%" height="450" src="https://www.youtube.com/embed/8um4LYamkNo?enablejsapi=1&theme=light&showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe id="myVideo2" class="ytplayer" width="100%" height="450" src="https://www.youtube.com/embed/8um4LYamkNo?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -704,7 +704,7 @@
     <div class="modal fade" data-video="myVideo3" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <iframe id="myVideo3" class="ytplayer" width="100%" height="450" src="https://www.youtube.com/embed/8yGph1V6W0g?enablejsapi=1&theme=light&showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe id="myVideo3" class="ytplayer" width="100%" height="450" src="https://www.youtube.com/embed/8yGph1V6W0g?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -712,7 +712,7 @@
     <div class="modal fade" data-video="myVideo4" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <iframe id="myVideo4" class="ytplayer" width="100%" height="450" src="https://www.youtube.com/embed/4IMhVU_ArYM?enablejsapi=1&theme=light&showinfo=0" frameborder="0" allowfullscreen></iframe>
+          <iframe id="myVideo4" class="ytplayer" width="100%" height="450" src="https://www.youtube.com/embed/4IMhVU_ArYM?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     </div>
@@ -724,6 +724,7 @@
     <script type="text/javascript" src="../js/jquery.magnific-popup.js"></script>
     <script type="text/javascript" src="../js/page.js"></script>
     <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/yt.js"></script>
 
     <script type="text/javascript">
       $(function() {
@@ -736,29 +737,6 @@
           }
         });
 
-        $('.modal').on('hide.bs.modal', function () {
-          console.log('...')
-          var data_video = $(this).data('video');
-          yt_players[data_video].pauseVideo();
-        });
-
-      });
-
-      var yt_int, yt_players = {},
-
-      initYT = function() {
-        $(".ytplayer").each(function() {
-          yt_players[this.id] = new YT.Player(this.id);
-        });
-      };
-
-      $.getScript("//www.youtube.com/player_api", function() {
-        yt_int = setInterval(function(){
-          if(typeof YT === "object"){
-            initYT();
-            clearInterval(yt_int);
-          }
-        },500);
       });
 
     </script>
