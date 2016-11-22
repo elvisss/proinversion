@@ -15,7 +15,7 @@ initYT = function() {
   });
 };
 
-$.getScript("//www.youtube.com/player_api", function() {
+$.getScript("https://www.youtube.com/player_api", function() {
   yt_int = setInterval(function(){
     if(typeof YT === "object"){
       initYT();
